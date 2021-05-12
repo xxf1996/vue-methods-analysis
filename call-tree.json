@@ -1,0 +1,202 @@
+{
+  "initRuleItem": [
+    [
+      "handleAddRule"
+    ],
+    [
+      "handleInsertRule"
+    ],
+    [
+      "handleCopyRule"
+    ]
+  ],
+  "resetCached": [
+    [
+      "resetRealTime"
+    ]
+  ],
+  "checkRuleModified": [
+    [
+      "handleSortableOnEnd"
+    ],
+    [
+      "handleSortableOnPopover"
+    ],
+    [
+      "handleCopyRule"
+    ],
+    [
+      "handleDeleteRule"
+    ]
+  ],
+  "addToNullArr": [
+    [
+      "handleAddRuleCondition"
+    ],
+    [
+      "handleAddRule"
+    ],
+    [
+      "handleInsertRule"
+    ]
+  ],
+  "addToCompareDict": [
+    [
+      "handleDeleteRuleCondition"
+    ],
+    [
+      "handleCopyRule"
+    ]
+  ],
+  "deleteFromNullArr": [
+    [
+      "handleDeleteRule"
+    ]
+  ],
+  "deleteFromCompareDict": [
+    [
+      "handleCheckRule",
+      "handleBlurRuleResult"
+    ],
+    [
+      "handleAddRuleCondition"
+    ],
+    [
+      "handleDeleteRule"
+    ]
+  ],
+  "getFirstDataType": [
+    [
+      "disabledInputColumnCondition"
+    ],
+    [
+      "disabledOperatorCondition"
+    ]
+  ],
+  "checkConditionFullNull": [
+    [
+      "handleCheckRule",
+      "handleBlurRuleResult"
+    ]
+  ],
+  "checkConditionNull": [
+    [
+      "handleDeleteRuleCondition"
+    ]
+  ],
+  "checkData": [
+    [
+      "handleSave"
+    ],
+    [
+      "handleValidateRule"
+    ]
+  ],
+  "sortRuleCondition": [
+    [
+      "compareReactive"
+    ],
+    [
+      "handleFocusRule",
+      "handleRemoveRuleInputColumn"
+    ],
+    [
+      "handleFocusRule",
+      "handleVisibleChangeRule"
+    ],
+    [
+      "handleAddRuleCondition"
+    ],
+    [
+      "handleDeleteRuleCondition"
+    ],
+    [
+      "handleDeleteRule"
+    ]
+  ],
+  "goToCurrentRow": [
+    [
+      "execNewRuleItem"
+    ],
+    [
+      "sendRepeatMsg"
+    ],
+    [
+      "sendNullMsg",
+      "checkData",
+      "handleSave"
+    ],
+    [
+      "sendNullMsg",
+      "checkData",
+      "handleValidateRule"
+    ]
+  ],
+  "showMessage": [
+    [
+      "addToCompareDict",
+      "handleDeleteRuleCondition"
+    ],
+    [
+      "addToCompareDict",
+      "handleCopyRule"
+    ]
+  ],
+  "closeMessage": [
+    [
+      "deleteFromCompareDict",
+      "handleCheckRule",
+      "handleBlurRuleResult"
+    ],
+    [
+      "deleteFromCompareDict",
+      "handleAddRuleCondition"
+    ],
+    [
+      "deleteFromCompareDict",
+      "handleDeleteRule"
+    ]
+  ],
+  "sendNullMsg": [
+    [
+      "checkData",
+      "handleSave"
+    ],
+    [
+      "checkData",
+      "handleValidateRule"
+    ]
+  ],
+  "updateRulePriorityWithType": [
+    [
+      "execNewRuleItem"
+    ],
+    [
+      "handleSortableOnEnd"
+    ],
+    [
+      "handleSortableOnPopover"
+    ],
+    [
+      "handleDeleteRule"
+    ]
+  ],
+  "handleCheckRule": [
+    [
+      "handleBlurRuleResult"
+    ]
+  ],
+  "handleFocusRule": [
+    [
+      "handleRemoveRuleInputColumn"
+    ],
+    [
+      "handleVisibleChangeRule"
+    ]
+  ],
+  "fetchUpdateRules": [
+    [
+      "handleCommitRules"
+    ]
+  ]
+}

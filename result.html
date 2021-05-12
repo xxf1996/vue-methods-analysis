@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result</title>
+  <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.1.1/dist/echarts.min.js" integrity="sha256-Yhe8c0oOs2dPYVQKLAi1aBB9uhr7yMmh67ukoWBqDuU=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div id="demo"></div>
+  <script>
+    const demo = document.getElementById('demo')
+    demo.style.height = `${window.innerHeight}px`
+    const chart = echarts.init(demo)
+    function randomColor () {
+      const randomChannel = () => Math.floor(Math.random() * 256)
+      const color = `rgb(${randomChannel()}, ${randomChannel()}, ${randomChannel()})`
+      // console.log(color)
+      return color
+    }
+
+    fetch('./result.json').then(res => {
+      return res.json()
+    }).then(info => {
+      console.log(info)
+      const option = {
+        title: {
+          text: 'Vue文件方法自底向上调用图',
+          align: 'center'
+        },
+        tooltip: {},
+        series: [{
+          type: 'graph',
+          layout: 'none',
+          symbolSize: 100,
+          roam: true,
+          edgeSymbol: ['none', 'arrow'],
+          edgeSymbolSize: [4, 15],
+          edgeLabel: {
+            fontSize: 20
+          },
+          label: {
+            show: true,
+            width: 100,
+            overflow: 'breakAll'
+          },
+          lineStyle: {
+            width: 1,
+            curveness: 0.3
+          },
+          data: info.nodes.map(node => Object.assign({}, node, {
+            x: Math.random() * (window.innerWidth - 50) + 25,
+            y: Math.random() * (window.innerHeight - 50) + 25,
+            itemStyle: {
+              color: randomColor()
+            }
+          })),
+          // data: info.nodes,
+          links: info.edges
+        }]
+      }
+      chart.setOption(option)
+    })
+  </script>
+</body>
+</html>

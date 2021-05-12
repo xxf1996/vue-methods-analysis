@@ -1,0 +1,1741 @@
+{
+  "name": "RulesTable",
+  "aliases": [
+    "rules-table",
+    "RulesTable"
+  ],
+  "fileName": "RulesTable.vue",
+  "description": "",
+  "tags": [],
+  "props": [
+    {
+      "name": "searchWords",
+      "tags": [],
+      "description": "",
+      "required": false,
+      "type": [
+        {
+          "kind": "expression",
+          "imports": [],
+          "expression": "any[]"
+        }
+      ],
+      "defaultValue": null,
+      "loc": {
+        "source": "searchWords: {\n      type: Array,\n      default: () => [],\n    }",
+        "start": {
+          "offset": 19903,
+          "line": 543,
+          "column": 4
+        },
+        "end": {
+          "offset": 19967,
+          "line": 546,
+          "column": 5
+        }
+      }
+    }
+  ],
+  "emits": [],
+  "components": [
+    {
+      "name": "VersionForm",
+      "aliases": [
+        "VersionForm",
+        "version-form"
+      ],
+      "kind": "script",
+      "source": {
+        "moduleName": "./VersionForm.vue",
+        "localName": "VersionForm",
+        "loc": {
+          "source": "import VersionForm from './VersionForm.vue';",
+          "start": {
+            "offset": 18570,
+            "line": 482,
+            "column": 0
+          },
+          "end": {
+            "offset": 18614,
+            "line": 482,
+            "column": 44
+          }
+        }
+      },
+      "loc": {
+        "source": "VersionForm",
+        "start": {
+          "offset": 19808,
+          "line": 536,
+          "column": 4
+        },
+        "end": {
+          "offset": 19819,
+          "line": 536,
+          "column": 15
+        }
+      }
+    },
+    {
+      "name": "RulesFooter",
+      "aliases": [
+        "RulesFooter",
+        "rules-footer"
+      ],
+      "kind": "script",
+      "source": {
+        "moduleName": "./RulesFooter.vue",
+        "localName": "RulesFooter",
+        "loc": {
+          "source": "import RulesFooter from './RulesFooter.vue';",
+          "start": {
+            "offset": 18615,
+            "line": 483,
+            "column": 0
+          },
+          "end": {
+            "offset": 18659,
+            "line": 483,
+            "column": 44
+          }
+        }
+      },
+      "loc": {
+        "source": "RulesFooter",
+        "start": {
+          "offset": 19825,
+          "line": 537,
+          "column": 4
+        },
+        "end": {
+          "offset": 19836,
+          "line": 537,
+          "column": 15
+        }
+      }
+    },
+    {
+      "name": "RulesTableRemark",
+      "aliases": [
+        "RulesTableRemark",
+        "rules-table-remark"
+      ],
+      "kind": "script",
+      "source": {
+        "moduleName": "./RulesTableRemark.vue",
+        "localName": "RulesTableRemark",
+        "loc": {
+          "source": "import RulesTableRemark from './RulesTableRemark.vue';",
+          "start": {
+            "offset": 18660,
+            "line": 484,
+            "column": 0
+          },
+          "end": {
+            "offset": 18714,
+            "line": 484,
+            "column": 54
+          }
+        }
+      },
+      "loc": {
+        "source": "RulesTableRemark",
+        "start": {
+          "offset": 19842,
+          "line": 538,
+          "column": 4
+        },
+        "end": {
+          "offset": 19858,
+          "line": 538,
+          "column": 20
+        }
+      }
+    },
+    {
+      "name": "ElTableDraggable",
+      "aliases": [
+        "ElTableDraggable",
+        "el-table-draggable"
+      ],
+      "kind": "script",
+      "source": {
+        "moduleName": "@/components/widgets/ElTableDraggable.vue",
+        "localName": "ElTableDraggable",
+        "loc": {
+          "source": "import ElTableDraggable from '@/components/widgets/ElTableDraggable.vue';",
+          "start": {
+            "offset": 18496,
+            "line": 481,
+            "column": 0
+          },
+          "end": {
+            "offset": 18569,
+            "line": 481,
+            "column": 73
+          }
+        }
+      },
+      "loc": {
+        "source": "ElTableDraggable",
+        "start": {
+          "offset": 19864,
+          "line": 539,
+          "column": 4
+        },
+        "end": {
+          "offset": 19880,
+          "line": 539,
+          "column": 20
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "identifierSource": {
+    "searchWords": {
+      "name": "props",
+      "loc": {
+        "source": "searchWords: {\n      type: Array,\n      default: () => [],\n    }",
+        "start": {
+          "offset": 19903,
+          "line": 543,
+          "column": 4
+        },
+        "end": {
+          "offset": 19967,
+          "line": 546,
+          "column": 5
+        }
+      }
+    },
+    "isSaveLoading": {
+      "name": "data",
+      "loc": {
+        "source": "isSaveLoading",
+        "start": {
+          "offset": 20291,
+          "line": 562,
+          "column": 6
+        },
+        "end": {
+          "offset": 20304,
+          "line": 562,
+          "column": 19
+        }
+      }
+    },
+    "isSearchLoading": {
+      "name": "data",
+      "loc": {
+        "source": "isSearchLoading",
+        "start": {
+          "offset": 20319,
+          "line": 563,
+          "column": 6
+        },
+        "end": {
+          "offset": 20334,
+          "line": 563,
+          "column": 21
+        }
+      }
+    },
+    "isPublishLoading": {
+      "name": "data",
+      "loc": {
+        "source": "isPublishLoading",
+        "start": {
+          "offset": 20349,
+          "line": 564,
+          "column": 6
+        },
+        "end": {
+          "offset": 20365,
+          "line": 564,
+          "column": 22
+        }
+      }
+    },
+    "isPublishPartition": {
+      "name": "data",
+      "loc": {
+        "source": "isPublishPartition",
+        "start": {
+          "offset": 20380,
+          "line": 565,
+          "column": 6
+        },
+        "end": {
+          "offset": 20398,
+          "line": 565,
+          "column": 24
+        }
+      }
+    },
+    "inputColumnVisible": {
+      "name": "data",
+      "loc": {
+        "source": "inputColumnVisible",
+        "start": {
+          "offset": 20413,
+          "line": 566,
+          "column": 6
+        },
+        "end": {
+          "offset": 20431,
+          "line": 566,
+          "column": 24
+        }
+      }
+    },
+    "showDialog": {
+      "name": "data",
+      "loc": {
+        "source": "showDialog",
+        "start": {
+          "offset": 20446,
+          "line": 567,
+          "column": 6
+        },
+        "end": {
+          "offset": 20456,
+          "line": 567,
+          "column": 16
+        }
+      }
+    },
+    "showPriorityModal": {
+      "name": "data",
+      "loc": {
+        "source": "showPriorityModal",
+        "start": {
+          "offset": 20471,
+          "line": 568,
+          "column": 6
+        },
+        "end": {
+          "offset": 20488,
+          "line": 568,
+          "column": 23
+        }
+      }
+    },
+    "canSortPriorityBtn": {
+      "name": "data",
+      "loc": {
+        "source": "canSortPriorityBtn",
+        "start": {
+          "offset": 20503,
+          "line": 569,
+          "column": 6
+        },
+        "end": {
+          "offset": 20521,
+          "line": 569,
+          "column": 24
+        }
+      }
+    },
+    "pageSize": {
+      "name": "data",
+      "loc": {
+        "source": "pageSize",
+        "start": {
+          "offset": 20536,
+          "line": 571,
+          "column": 6
+        },
+        "end": {
+          "offset": 20544,
+          "line": 571,
+          "column": 14
+        }
+      }
+    },
+    "currentPage": {
+      "name": "data",
+      "loc": {
+        "source": "currentPage",
+        "start": {
+          "offset": 20556,
+          "line": 572,
+          "column": 6
+        },
+        "end": {
+          "offset": 20567,
+          "line": 572,
+          "column": 17
+        }
+      }
+    },
+    "cacheRules": {
+      "name": "data",
+      "loc": {
+        "source": "cacheRules",
+        "start": {
+          "offset": 20579,
+          "line": 574,
+          "column": 6
+        },
+        "end": {
+          "offset": 20589,
+          "line": 574,
+          "column": 16
+        }
+      }
+    },
+    "pageSizes": {
+      "name": "data",
+      "loc": {
+        "source": "pageSizes",
+        "start": {
+          "offset": 20601,
+          "line": 575,
+          "column": 6
+        },
+        "end": {
+          "offset": 20610,
+          "line": 575,
+          "column": 15
+        }
+      }
+    },
+    "timerDraft": {
+      "name": "data",
+      "loc": {
+        "source": "timerDraft",
+        "start": {
+          "offset": 20638,
+          "line": 577,
+          "column": 6
+        },
+        "end": {
+          "offset": 20648,
+          "line": 577,
+          "column": 16
+        }
+      }
+    },
+    "clickedRow": {
+      "name": "data",
+      "loc": {
+        "source": "clickedRow",
+        "start": {
+          "offset": 20662,
+          "line": 578,
+          "column": 6
+        },
+        "end": {
+          "offset": 20672,
+          "line": 578,
+          "column": 16
+        }
+      }
+    },
+    "operators": {
+      "name": "data",
+      "loc": {
+        "source": "operators",
+        "start": {
+          "offset": 20684,
+          "line": 579,
+          "column": 6
+        },
+        "end": {
+          "offset": 20693,
+          "line": 579,
+          "column": 15
+        }
+      }
+    },
+    "rulesForm": {
+      "name": "data",
+      "loc": {
+        "source": "rulesForm",
+        "start": {
+          "offset": 20726,
+          "line": 580,
+          "column": 6
+        },
+        "end": {
+          "offset": 20735,
+          "line": 580,
+          "column": 15
+        }
+      }
+    },
+    "defaultRuleItem": {
+      "name": "data",
+      "loc": {
+        "source": "defaultRuleItem",
+        "start": {
+          "offset": 20776,
+          "line": 583,
+          "column": 6
+        },
+        "end": {
+          "offset": 20791,
+          "line": 583,
+          "column": 21
+        }
+      }
+    },
+    "defaultRuleCondition": {
+      "name": "data",
+      "loc": {
+        "source": "defaultRuleCondition",
+        "start": {
+          "offset": 21021,
+          "line": 596,
+          "column": 6
+        },
+        "end": {
+          "offset": 21041,
+          "line": 596,
+          "column": 26
+        }
+      }
+    },
+    "priorityForm": {
+      "name": "data",
+      "loc": {
+        "source": "priorityForm",
+        "start": {
+          "offset": 21123,
+          "line": 601,
+          "column": 6
+        },
+        "end": {
+          "offset": 21135,
+          "line": 601,
+          "column": 18
+        }
+      }
+    },
+    "priorityRule": {
+      "name": "data",
+      "loc": {
+        "source": "priorityRule",
+        "start": {
+          "offset": 21190,
+          "line": 605,
+          "column": 6
+        },
+        "end": {
+          "offset": 21202,
+          "line": 605,
+          "column": 18
+        }
+      }
+    },
+    "ruleCached": {
+      "name": "data",
+      "loc": {
+        "source": "ruleCached",
+        "start": {
+          "offset": 21304,
+          "line": 610,
+          "column": 6
+        },
+        "end": {
+          "offset": 21314,
+          "line": 610,
+          "column": 16
+        }
+      }
+    },
+    "conditionKeyCached": {
+      "name": "data",
+      "loc": {
+        "source": "conditionKeyCached",
+        "start": {
+          "offset": 21326,
+          "line": 611,
+          "column": 6
+        },
+        "end": {
+          "offset": 21344,
+          "line": 611,
+          "column": 24
+        }
+      }
+    },
+    "valueCached": {
+      "name": "data",
+      "loc": {
+        "source": "valueCached",
+        "start": {
+          "offset": 21356,
+          "line": 612,
+          "column": 6
+        },
+        "end": {
+          "offset": 21367,
+          "line": 612,
+          "column": 17
+        }
+      }
+    },
+    "nullArr": {
+      "name": "data",
+      "loc": {
+        "source": "nullArr",
+        "start": {
+          "offset": 21379,
+          "line": 613,
+          "column": 6
+        },
+        "end": {
+          "offset": 21386,
+          "line": 613,
+          "column": 13
+        }
+      }
+    },
+    "duplicatedArr": {
+      "name": "data",
+      "loc": {
+        "source": "duplicatedArr",
+        "start": {
+          "offset": 21412,
+          "line": 614,
+          "column": 6
+        },
+        "end": {
+          "offset": 21425,
+          "line": 614,
+          "column": 19
+        }
+      }
+    },
+    "compareDict": {
+      "name": "data",
+      "loc": {
+        "source": "compareDict",
+        "start": {
+          "offset": 21437,
+          "line": 615,
+          "column": 6
+        },
+        "end": {
+          "offset": 21448,
+          "line": 615,
+          "column": 17
+        }
+      }
+    },
+    "originalDict": {
+      "name": "data",
+      "loc": {
+        "source": "originalDict",
+        "start": {
+          "offset": 21460,
+          "line": 616,
+          "column": 6
+        },
+        "end": {
+          "offset": 21472,
+          "line": 616,
+          "column": 18
+        }
+      }
+    },
+    "recoverDict": {
+      "name": "data",
+      "loc": {
+        "source": "recoverDict",
+        "start": {
+          "offset": 21484,
+          "line": 617,
+          "column": 6
+        },
+        "end": {
+          "offset": 21495,
+          "line": 617,
+          "column": 17
+        }
+      }
+    },
+    "messageDict": {
+      "name": "data",
+      "loc": {
+        "source": "messageDict",
+        "start": {
+          "offset": 21507,
+          "line": 618,
+          "column": 6
+        },
+        "end": {
+          "offset": 21518,
+          "line": 618,
+          "column": 17
+        }
+      }
+    },
+    "filterRuleList": {
+      "name": "computed",
+      "loc": {
+        "source": "filterRuleList",
+        "start": {
+          "offset": 22047,
+          "line": 635,
+          "column": 4
+        },
+        "end": {
+          "offset": 22061,
+          "line": 635,
+          "column": 18
+        }
+      }
+    },
+    "total": {
+      "name": "computed",
+      "loc": {
+        "source": "total",
+        "start": {
+          "offset": 22273,
+          "line": 643,
+          "column": 4
+        },
+        "end": {
+          "offset": 22278,
+          "line": 643,
+          "column": 9
+        }
+      }
+    },
+    "isSearching": {
+      "name": "computed",
+      "loc": {
+        "source": "isSearching",
+        "start": {
+          "offset": 22345,
+          "line": 647,
+          "column": 4
+        },
+        "end": {
+          "offset": 22356,
+          "line": 647,
+          "column": 15
+        }
+      }
+    },
+    "keepFirstSelected": {
+      "name": "computed",
+      "loc": {
+        "source": "keepFirstSelected",
+        "start": {
+          "offset": 22417,
+          "line": 651,
+          "column": 4
+        },
+        "end": {
+          "offset": 22434,
+          "line": 651,
+          "column": 21
+        }
+      }
+    },
+    "compareReactive": {
+      "name": "methods",
+      "loc": {
+        "source": "compareReactive",
+        "start": {
+          "offset": 24280,
+          "line": 734,
+          "column": 4
+        },
+        "end": {
+          "offset": 24295,
+          "line": 734,
+          "column": 19
+        }
+      }
+    },
+    "initCurrentRow": {
+      "name": "methods",
+      "loc": {
+        "source": "initCurrentRow",
+        "start": {
+          "offset": 25153,
+          "line": 764,
+          "column": 4
+        },
+        "end": {
+          "offset": 25167,
+          "line": 764,
+          "column": 18
+        }
+      }
+    },
+    "initCurrentRuleList": {
+      "name": "methods",
+      "loc": {
+        "source": "initCurrentRuleList",
+        "start": {
+          "offset": 25677,
+          "line": 785,
+          "column": 4
+        },
+        "end": {
+          "offset": 25696,
+          "line": 785,
+          "column": 23
+        }
+      }
+    },
+    "initRuleItem": {
+      "name": "methods",
+      "loc": {
+        "source": "initRuleItem",
+        "start": {
+          "offset": 26719,
+          "line": 819,
+          "column": 4
+        },
+        "end": {
+          "offset": 26731,
+          "line": 819,
+          "column": 16
+        }
+      }
+    },
+    "resetRealTime": {
+      "name": "methods",
+      "loc": {
+        "source": "resetRealTime",
+        "start": {
+          "offset": 27013,
+          "line": 832,
+          "column": 4
+        },
+        "end": {
+          "offset": 27026,
+          "line": 832,
+          "column": 17
+        }
+      }
+    },
+    "resetCached": {
+      "name": "methods",
+      "loc": {
+        "source": "resetCached",
+        "start": {
+          "offset": 27277,
+          "line": 843,
+          "column": 4
+        },
+        "end": {
+          "offset": 27288,
+          "line": 843,
+          "column": 15
+        }
+      }
+    },
+    "handleRowClick": {
+      "name": "methods",
+      "loc": {
+        "source": "handleRowClick",
+        "start": {
+          "offset": 27398,
+          "line": 849,
+          "column": 4
+        },
+        "end": {
+          "offset": 27412,
+          "line": 849,
+          "column": 18
+        }
+      }
+    },
+    "checkRuleModified": {
+      "name": "methods",
+      "loc": {
+        "source": "checkRuleModified",
+        "start": {
+          "offset": 27464,
+          "line": 853,
+          "column": 4
+        },
+        "end": {
+          "offset": 27481,
+          "line": 853,
+          "column": 21
+        }
+      }
+    },
+    "operandValidator": {
+      "name": "methods",
+      "loc": {
+        "source": "operandValidator",
+        "start": {
+          "offset": 28581,
+          "line": 891,
+          "column": 4
+        },
+        "end": {
+          "offset": 28597,
+          "line": 891,
+          "column": 20
+        }
+      }
+    },
+    "isNotBlank": {
+      "name": "methods",
+      "loc": {
+        "source": "isNotBlank",
+        "start": {
+          "offset": 29413,
+          "line": 914,
+          "column": 4
+        },
+        "end": {
+          "offset": 29423,
+          "line": 914,
+          "column": 14
+        }
+      }
+    },
+    "addToNullArr": {
+      "name": "methods",
+      "loc": {
+        "source": "addToNullArr",
+        "start": {
+          "offset": 29490,
+          "line": 918,
+          "column": 4
+        },
+        "end": {
+          "offset": 29502,
+          "line": 918,
+          "column": 16
+        }
+      }
+    },
+    "addToCompareDict": {
+      "name": "methods",
+      "loc": {
+        "source": "addToCompareDict",
+        "start": {
+          "offset": 29648,
+          "line": 924,
+          "column": 4
+        },
+        "end": {
+          "offset": 29664,
+          "line": 924,
+          "column": 20
+        }
+      }
+    },
+    "deleteFromNullArr": {
+      "name": "methods",
+      "loc": {
+        "source": "deleteFromNullArr",
+        "start": {
+          "offset": 30210,
+          "line": 946,
+          "column": 4
+        },
+        "end": {
+          "offset": 30227,
+          "line": 946,
+          "column": 21
+        }
+      }
+    },
+    "deleteFromCompareDict": {
+      "name": "methods",
+      "loc": {
+        "source": "deleteFromCompareDict",
+        "start": {
+          "offset": 30386,
+          "line": 952,
+          "column": 4
+        },
+        "end": {
+          "offset": 30407,
+          "line": 952,
+          "column": 25
+        }
+      }
+    },
+    "disabledInputColumnCondition": {
+      "name": "methods",
+      "loc": {
+        "source": "disabledInputColumnCondition",
+        "start": {
+          "offset": 30959,
+          "line": 972,
+          "column": 4
+        },
+        "end": {
+          "offset": 30987,
+          "line": 972,
+          "column": 32
+        }
+      }
+    },
+    "disabledOperatorCondition": {
+      "name": "methods",
+      "loc": {
+        "source": "disabledOperatorCondition",
+        "start": {
+          "offset": 32080,
+          "line": 1013,
+          "column": 4
+        },
+        "end": {
+          "offset": 32105,
+          "line": 1013,
+          "column": 29
+        }
+      }
+    },
+    "getFirstDataType": {
+      "name": "methods",
+      "loc": {
+        "source": "getFirstDataType",
+        "start": {
+          "offset": 32715,
+          "line": 1034,
+          "column": 4
+        },
+        "end": {
+          "offset": 32731,
+          "line": 1034,
+          "column": 20
+        }
+      }
+    },
+    "firstDataTypeEqualCheck": {
+      "name": "methods",
+      "loc": {
+        "source": "firstDataTypeEqualCheck",
+        "start": {
+          "offset": 33308,
+          "line": 1058,
+          "column": 4
+        },
+        "end": {
+          "offset": 33331,
+          "line": 1058,
+          "column": 27
+        }
+      }
+    },
+    "execNewRuleItem": {
+      "name": "methods",
+      "loc": {
+        "source": "execNewRuleItem",
+        "start": {
+          "offset": 33595,
+          "line": 1068,
+          "column": 4
+        },
+        "end": {
+          "offset": 33610,
+          "line": 1068,
+          "column": 19
+        }
+      }
+    },
+    "checkConditionError": {
+      "name": "methods",
+      "loc": {
+        "source": "checkConditionError",
+        "start": {
+          "offset": 34436,
+          "line": 1095,
+          "column": 4
+        },
+        "end": {
+          "offset": 34455,
+          "line": 1095,
+          "column": 23
+        }
+      }
+    },
+    "checkConditionFullNull": {
+      "name": "methods",
+      "loc": {
+        "source": "checkConditionFullNull",
+        "start": {
+          "offset": 34887,
+          "line": 1110,
+          "column": 4
+        },
+        "end": {
+          "offset": 34909,
+          "line": 1110,
+          "column": 26
+        }
+      }
+    },
+    "checkConditionNull": {
+      "name": "methods",
+      "loc": {
+        "source": "checkConditionNull",
+        "start": {
+          "offset": 35166,
+          "line": 1120,
+          "column": 4
+        },
+        "end": {
+          "offset": 35184,
+          "line": 1120,
+          "column": 22
+        }
+      }
+    },
+    "checkData": {
+      "name": "methods",
+      "loc": {
+        "source": "checkData",
+        "start": {
+          "offset": 35472,
+          "line": 1132,
+          "column": 4
+        },
+        "end": {
+          "offset": 35481,
+          "line": 1132,
+          "column": 13
+        }
+      }
+    },
+    "sortRuleCondition": {
+      "name": "methods",
+      "loc": {
+        "source": "sortRuleCondition",
+        "start": {
+          "offset": 36425,
+          "line": 1172,
+          "column": 4
+        },
+        "end": {
+          "offset": 36442,
+          "line": 1172,
+          "column": 21
+        }
+      }
+    },
+    "goToCurrentRow": {
+      "name": "methods",
+      "loc": {
+        "source": "goToCurrentRow",
+        "start": {
+          "offset": 36925,
+          "line": 1189,
+          "column": 4
+        },
+        "end": {
+          "offset": 36939,
+          "line": 1189,
+          "column": 18
+        }
+      }
+    },
+    "cancelCurrentRow": {
+      "name": "methods",
+      "loc": {
+        "source": "cancelCurrentRow",
+        "start": {
+          "offset": 37167,
+          "line": 1198,
+          "column": 4
+        },
+        "end": {
+          "offset": 37183,
+          "line": 1198,
+          "column": 20
+        }
+      }
+    },
+    "showMessage": {
+      "name": "methods",
+      "loc": {
+        "source": "showMessage",
+        "start": {
+          "offset": 37570,
+          "line": 1217,
+          "column": 4
+        },
+        "end": {
+          "offset": 37581,
+          "line": 1217,
+          "column": 15
+        }
+      }
+    },
+    "closeMessage": {
+      "name": "methods",
+      "loc": {
+        "source": "closeMessage",
+        "start": {
+          "offset": 37893,
+          "line": 1229,
+          "column": 4
+        },
+        "end": {
+          "offset": 37905,
+          "line": 1229,
+          "column": 16
+        }
+      }
+    },
+    "sendRepeatMsg": {
+      "name": "methods",
+      "loc": {
+        "source": "sendRepeatMsg",
+        "start": {
+          "offset": 38063,
+          "line": 1238,
+          "column": 4
+        },
+        "end": {
+          "offset": 38076,
+          "line": 1238,
+          "column": 17
+        }
+      }
+    },
+    "sendNullMsg": {
+      "name": "methods",
+      "loc": {
+        "source": "sendNullMsg",
+        "start": {
+          "offset": 38396,
+          "line": 1254,
+          "column": 4
+        },
+        "end": {
+          "offset": 38407,
+          "line": 1254,
+          "column": 15
+        }
+      }
+    },
+    "updateRulePriorityWithType": {
+      "name": "methods",
+      "loc": {
+        "source": "updateRulePriorityWithType",
+        "start": {
+          "offset": 38819,
+          "line": 1272,
+          "column": 4
+        },
+        "end": {
+          "offset": 38845,
+          "line": 1272,
+          "column": 30
+        }
+      }
+    },
+    "handleSortableOnEnd": {
+      "name": "methods",
+      "loc": {
+        "source": "handleSortableOnEnd",
+        "start": {
+          "offset": 39289,
+          "line": 1288,
+          "column": 4
+        },
+        "end": {
+          "offset": 39308,
+          "line": 1288,
+          "column": 23
+        }
+      }
+    },
+    "handleOpenRulePriority": {
+      "name": "methods",
+      "loc": {
+        "source": "handleOpenRulePriority",
+        "start": {
+          "offset": 39781,
+          "line": 1304,
+          "column": 4
+        },
+        "end": {
+          "offset": 39803,
+          "line": 1304,
+          "column": 26
+        }
+      }
+    },
+    "handleSortableOnPopover": {
+      "name": "methods",
+      "loc": {
+        "source": "handleSortableOnPopover",
+        "start": {
+          "offset": 40038,
+          "line": 1317,
+          "column": 4
+        },
+        "end": {
+          "offset": 40061,
+          "line": 1317,
+          "column": 27
+        }
+      }
+    },
+    "handleCheckRule": {
+      "name": "methods",
+      "loc": {
+        "source": "handleCheckRule",
+        "start": {
+          "offset": 40975,
+          "line": 1348,
+          "column": 4
+        },
+        "end": {
+          "offset": 40990,
+          "line": 1348,
+          "column": 19
+        }
+      }
+    },
+    "handleFocusRule": {
+      "name": "methods",
+      "loc": {
+        "source": "handleFocusRule",
+        "start": {
+          "offset": 41967,
+          "line": 1383,
+          "column": 4
+        },
+        "end": {
+          "offset": 41982,
+          "line": 1383,
+          "column": 19
+        }
+      }
+    },
+    "handleRemoveRuleInputColumn": {
+      "name": "methods",
+      "loc": {
+        "source": "handleRemoveRuleInputColumn",
+        "start": {
+          "offset": 42144,
+          "line": 1389,
+          "column": 4
+        },
+        "end": {
+          "offset": 42171,
+          "line": 1389,
+          "column": 31
+        }
+      }
+    },
+    "handleVisibleChangeRule": {
+      "name": "methods",
+      "loc": {
+        "source": "handleVisibleChangeRule",
+        "start": {
+          "offset": 42601,
+          "line": 1405,
+          "column": 4
+        },
+        "end": {
+          "offset": 42624,
+          "line": 1405,
+          "column": 27
+        }
+      }
+    },
+    "handleClickOperator": {
+      "name": "methods",
+      "loc": {
+        "source": "handleClickOperator",
+        "start": {
+          "offset": 42844,
+          "line": 1414,
+          "column": 4
+        },
+        "end": {
+          "offset": 42863,
+          "line": 1414,
+          "column": 23
+        }
+      }
+    },
+    "handleBlurRuleResult": {
+      "name": "methods",
+      "loc": {
+        "source": "handleBlurRuleResult",
+        "start": {
+          "offset": 43054,
+          "line": 1423,
+          "column": 4
+        },
+        "end": {
+          "offset": 43074,
+          "line": 1423,
+          "column": 24
+        }
+      }
+    },
+    "handleChangeOperator": {
+      "name": "methods",
+      "loc": {
+        "source": "handleChangeOperator",
+        "start": {
+          "offset": 43175,
+          "line": 1428,
+          "column": 4
+        },
+        "end": {
+          "offset": 43195,
+          "line": 1428,
+          "column": 24
+        }
+      }
+    },
+    "handleChangeOperand": {
+      "name": "methods",
+      "loc": {
+        "source": "handleChangeOperand",
+        "start": {
+          "offset": 43448,
+          "line": 1438,
+          "column": 4
+        },
+        "end": {
+          "offset": 43467,
+          "line": 1438,
+          "column": 23
+        }
+      }
+    },
+    "handleChangeRuleResult": {
+      "name": "methods",
+      "loc": {
+        "source": "handleChangeRuleResult",
+        "start": {
+          "offset": 43741,
+          "line": 1448,
+          "column": 4
+        },
+        "end": {
+          "offset": 43763,
+          "line": 1448,
+          "column": 26
+        }
+      }
+    },
+    "handleAddRuleCondition": {
+      "name": "methods",
+      "loc": {
+        "source": "handleAddRuleCondition",
+        "start": {
+          "offset": 43841,
+          "line": 1452,
+          "column": 4
+        },
+        "end": {
+          "offset": 43863,
+          "line": 1452,
+          "column": 26
+        }
+      }
+    },
+    "handleDeleteRuleCondition": {
+      "name": "methods",
+      "loc": {
+        "source": "handleDeleteRuleCondition",
+        "start": {
+          "offset": 44401,
+          "line": 1472,
+          "column": 4
+        },
+        "end": {
+          "offset": 44426,
+          "line": 1472,
+          "column": 29
+        }
+      }
+    },
+    "handleAddRule": {
+      "name": "methods",
+      "loc": {
+        "source": "handleAddRule",
+        "start": {
+          "offset": 45091,
+          "line": 1495,
+          "column": 4
+        },
+        "end": {
+          "offset": 45104,
+          "line": 1495,
+          "column": 17
+        }
+      }
+    },
+    "handleInsertRule": {
+      "name": "methods",
+      "loc": {
+        "source": "handleInsertRule",
+        "start": {
+          "offset": 45842,
+          "line": 1517,
+          "column": 4
+        },
+        "end": {
+          "offset": 45858,
+          "line": 1517,
+          "column": 20
+        }
+      }
+    },
+    "handleCopyRule": {
+      "name": "methods",
+      "loc": {
+        "source": "handleCopyRule",
+        "start": {
+          "offset": 46115,
+          "line": 1525,
+          "column": 4
+        },
+        "end": {
+          "offset": 46129,
+          "line": 1525,
+          "column": 18
+        }
+      }
+    },
+    "handleDeleteRule": {
+      "name": "methods",
+      "loc": {
+        "source": "handleDeleteRule",
+        "start": {
+          "offset": 46613,
+          "line": 1543,
+          "column": 4
+        },
+        "end": {
+          "offset": 46629,
+          "line": 1543,
+          "column": 20
+        }
+      }
+    },
+    "handleSave": {
+      "name": "methods",
+      "loc": {
+        "source": "handleSave",
+        "start": {
+          "offset": 47571,
+          "line": 1576,
+          "column": 4
+        },
+        "end": {
+          "offset": 47581,
+          "line": 1576,
+          "column": 14
+        }
+      }
+    },
+    "handleValidateRule": {
+      "name": "methods",
+      "loc": {
+        "source": "handleValidateRule",
+        "start": {
+          "offset": 48321,
+          "line": 1598,
+          "column": 4
+        },
+        "end": {
+          "offset": 48339,
+          "line": 1598,
+          "column": 22
+        }
+      }
+    },
+    "handleCommitRules": {
+      "name": "methods",
+      "loc": {
+        "source": "handleCommitRules",
+        "start": {
+          "offset": 49223,
+          "line": 1625,
+          "column": 4
+        },
+        "end": {
+          "offset": 49240,
+          "line": 1625,
+          "column": 21
+        }
+      }
+    },
+    "fetchUpdateRules": {
+      "name": "methods",
+      "loc": {
+        "source": "fetchUpdateRules",
+        "start": {
+          "offset": 50216,
+          "line": 1659,
+          "column": 10
+        },
+        "end": {
+          "offset": 50232,
+          "line": 1659,
+          "column": 26
+        }
+      }
+    }
+  },
+  "options": {
+    "properties": {
+      "name": {
+        "loc": {
+          "source": "'RulesTable'",
+          "start": {
+            "offset": 19773,
+            "line": 533,
+            "column": 8
+          },
+          "end": {
+            "offset": 19785,
+            "line": 533,
+            "column": 20
+          }
+        }
+      },
+      "components": {
+        "loc": {
+          "source": "{\n    VersionForm,\n    RulesFooter,\n    RulesTableRemark,\n    ElTableDraggable,\n  }",
+          "start": {
+            "offset": 19802,
+            "line": 535,
+            "column": 14
+          },
+          "end": {
+            "offset": 19885,
+            "line": 540,
+            "column": 3
+          }
+        }
+      },
+      "props": {
+        "loc": {
+          "source": "{\n    searchWords: {\n      type: Array,\n      default: () => [],\n    },\n  }",
+          "start": {
+            "offset": 19897,
+            "line": 542,
+            "column": 9
+          },
+          "end": {
+            "offset": 19972,
+            "line": 547,
+            "column": 3
+          }
+        }
+      },
+      "data": {
+        "loc": {
+          "source": "data() {\n    const validatePriority = (rule, value, cb) => {\n      this.canSortPriorityBtn = true;\n\n      if (typeof value !== 'number' || value <= 0) {\n        this.canSortPriorityBtn = false;\n        cb(new Error(this.$t('rulesets.ph.priority')));\n      } else {\n        cb();\n      }\n    };\n\n    return {\n      isSaveLoading: false,\n      isSearchLoading: false,\n      isPublishLoading: false,\n      isPublishPartition: false,\n      inputColumnVisible: false,\n      showDialog: false,\n      showPriorityModal: false,\n      canSortPriorityBtn: true,\n\n      pageSize: 10,\n      currentPage: 1,\n\n      cacheRules: [],\n      pageSizes: [10, 20, 50, 100],\n\n      timerDraft: null,\n      clickedRow: '',\n      operators: CONFIG.defaultOperators,\n      rulesForm: {\n        ruleList: [],\n      },\n      defaultRuleItem: {\n        priority: 99999,\n        id: 0,\n        value: '',\n        remark: '',\n        condition: [\n          {\n            column: [],\n            operand: '',\n            operator: '',\n          },\n        ],\n      },\n      defaultRuleCondition: {\n        column: [],\n        operand: '',\n        operator: '',\n      },\n      priorityForm: {\n        prev: '',\n        next: '',\n      },\n      priorityRule: {\n        next: [{ validator: validatePriority, trigger: 'change' }],\n      },\n\n      // 实时检测\n      ruleCached: {},\n      conditionKeyCached: '',\n      valueCached: '',\n      nullArr: [], // 用于存放新增的规则？\n      duplicatedArr: [],\n      compareDict: {},\n      originalDict: {},\n      recoverDict: {},\n      messageDict: {},\n    };\n  }",
+          "start": {
+            "offset": 19977,
+            "line": 549,
+            "column": 2
+          },
+          "end": {
+            "offset": 21534,
+            "line": 620,
+            "column": 3
+          }
+        }
+      },
+      "computed": {
+        "loc": {
+          "source": "{\n    ...mapGetters(['me', 'checkProjectRole', 'hasEditConflict']),\n\n    ...mapState({\n      rules: (state) => state.rulesets.rules,\n      ruleSet: (state) => state.rulesets.ruleSet,\n      version: (state) => state.rulesets.version,\n      isRulesDraft: (state) => state.rulesets.isRulesDraft,\n      isViewHistory: (state) => state.rulesets.isViewHistory,\n      isLeavePublish: (state) => state.rulesets.isLeavePublish,\n      isRulesModified: (state) => state.rulesets.isRulesModified,\n    }),\n\n    filterRuleList() {\n      const { currentPage, pageSize } = this;\n      const start = (currentPage - 1) * pageSize;\n      const end = currentPage * pageSize;\n\n      return this.rulesForm.ruleList.slice(start, end);\n    },\n\n    total() {\n      return this.rulesForm.ruleList.length || 1;\n    },\n\n    isSearching() {\n      return this.searchWords.length !== 0;\n    },\n\n    keepFirstSelected() {\n      if (this.$util.isEmptyObject(this.ruleSet)) return false;\n\n      return this.ruleSet.extra.result_strategy.mode === 'KEEP_FIRST';\n    },\n  }",
+          "start": {
+            "offset": 21549,
+            "line": 622,
+            "column": 12
+          },
+          "end": {
+            "offset": 22585,
+            "line": 656,
+            "column": 3
+          }
+        }
+      },
+      "watch": {
+        "loc": {
+          "source": "{\n    rulesForm: {\n      deep: true,\n      immediate: true,\n      handler({ ruleList }) {\n        const validRegexOperators = ['', 'match', 'not match'];\n        let checkResult = true;\n\n        ruleList.forEach((item) => {\n          checkResult = item.condition.every(\n            ({ operator }) => !validRegexOperators.includes(operator),\n          );\n        });\n\n        this.toggleKeepFirstSelectMode(checkResult);\n      },\n    },\n\n    rules: {\n      immediate: true,\n      handler(newVal) {\n        this.resetRealTime();\n\n        if (newVal.length !== 0) {\n          this.rulesForm.ruleList = this.compareReactive(newVal);\n        } else {\n          this.rulesForm.ruleList = [];\n          this.initCurrentRow();\n        }\n\n        this.cacheRules = this.$util.simpleDeepCopy(this.rulesForm.ruleList); // 不明确\n      },\n    },\n\n    recoverDict: {\n      handler: 'checkRuleModified',\n    },\n\n    isLeavePublish(newVal) {\n      newVal && this.handleValidateRule(false);\n    },\n\n    searchWords() {\n      this.initCurrentRuleList();\n    },\n\n    showDialog(newVal) {\n      if (!newVal) {\n        this.$refs.partitionRef.reset();\n      }\n    },\n  }",
+          "start": {
+            "offset": 22597,
+            "line": 658,
+            "column": 9
+          },
+          "end": {
+            "offset": 23744,
+            "line": 709,
+            "column": 3
+          }
+        }
+      },
+      "created": {
+        "loc": {
+          "source": "created() {\n    this.initCurrentRuleList();\n    document.addEventListener('click', this.cancelCurrentRow);\n  }",
+          "start": {
+            "offset": 23749,
+            "line": 711,
+            "column": 2
+          },
+          "end": {
+            "offset": 23859,
+            "line": 714,
+            "column": 3
+          }
+        }
+      },
+      "beforeDestroy": {
+        "loc": {
+          "source": "beforeDestroy() {\n    this.toggleViewHistory(false);\n    this.resetRealTime();\n    document.removeEventListener('click', this.cancelCurrentRow);\n  }",
+          "start": {
+            "offset": 23864,
+            "line": 716,
+            "column": 2
+          },
+          "end": {
+            "offset": 24012,
+            "line": 720,
+            "column": 3
+          }
+        }
+      },
+      "methods": {
+        "loc": {
+          "source": "{\n    ...mapActions([\n      'readRules',\n      'readRuleSetLogs',\n      'updateEditConflict',\n      'saveOrPublishRules',\n      'toggleViewHistory',\n      'toggleRulesModified',\n      'toggleLeavePublish',\n      'toggleKeepFirstSelectMode',\n    ]),\n\n    compareReactive(rules) {\n      const result = rules.reduce((cur, rule) => {\n        const condition = rule.condition.map((item) => ({\n          ...item,\n          column: item.column.split(','),\n        }));\n        const condStr = this.sortRuleCondition(condition);\n        const item = {\n          condition,\n          uid: id++,\n          id: rule.id,\n          value: rule.value,\n          remark: rule.remark,\n          priority: rule.priority,\n        };\n\n        this.compareDict[condStr]\n          ? this.compareDict[condStr].push(item)\n          : (this.compareDict[condStr] = [item]);\n        this.originalDict[rule.priority] = this.$util.simpleDeepCopy(item); // 不明确\n        this.recoverDict[rule.priority] = true;\n\n        cur.push(item);\n        return cur;\n      }, []);\n\n      result.sort((a, b) => a.priority - b.priority);\n      return result;\n    },\n\n    initCurrentRow() {\n      if (\n        this.checkProjectRole('general')\n        || this.hasEditConflict\n        || this.isViewHistory\n      ) {\n        return;\n      }\n\n      if (this.rulesForm.ruleList.length === 0) {\n        this.rulesForm.ruleList.push({\n          ...this.$util.simpleDeepCopy(this.defaultRuleItem),\n          priority: 1,\n        });\n      }\n\n      if (this.$refs.rulesRef && this.$refs.rulesRef.setCurrentRow) {\n        this.$refs.rulesRef.setCurrentRow(this.rulesForm.ruleList[0]);\n      }\n    },\n\n    initCurrentRuleList() {\n      const containOperandOrValue = (item) =>\n        this.searchWords.every((word) => {\n          const lowerWord = word.toLowerCase();\n          const containOperand = item.condition.some(\n            (condItem) =>\n              String(condItem.operand).toLowerCase().indexOf(lowerWord) !== -1,\n          );\n          const containValue\n            = item.value.toLowerCase().indexOf(lowerWord) !== -1;\n\n          return containOperand || containValue;\n        });\n\n      this.isSearchLoading = true;\n\n      setTimeout(() => {\n        this.rulesForm.ruleList = [...this.cacheRules]; // 可能有问题\n        this.cacheRules = [...this.rulesForm.ruleList];\n\n        const filteredData = this.cacheRules.filter((item) =>\n          containOperandOrValue(item));\n\n        if (this.isSearching) {\n          filteredData.forEach((item, index) => {\n            item.searchIndex = index + 1;\n          });\n          this.rulesForm.ruleList = filteredData;\n        }\n\n        this.isSearchLoading = false;\n      }, 300);\n    },\n\n    initRuleItem(temp) {\n      const item = this.$util.simpleDeepCopy(temp);\n\n      item.id = 0;\n      item.uid = id++;\n      item.remark = '';\n      item.priority = this.isSearching\n        ? this.cacheRules.length + 1\n        : this.rulesForm.ruleList.length + 1;\n\n      return item;\n    },\n\n    resetRealTime() {\n      Object.keys(this.messageDict).forEach((key) =>\n        this.messageDict[key].close());\n\n      this.nullArr = [];\n      this.compareDict = {};\n      this.messageDict = {};\n      this.duplicatedArr = [];\n      this.resetCached();\n    },\n\n    resetCached() {\n      this.ruleCached = {};\n      this.conditionKeyCached = '';\n      this.valueCached = '';\n    },\n\n    handleRowClick(row) {\n      this.clickedRow = row.id;\n    },\n\n    checkRuleModified(type = undefined) {\n      // 区分是否在搜索状况下检测\n      const tempList = this.isSearching\n        ? this.cacheRules.map((item) => {\n          const { searchIndex, ...props } = item;\n          return { ...props };\n        })\n        : this.rulesForm.ruleList;\n\n      let isConflict = false;\n\n      if (\n        type !== 'skip'\n        && Object.keys(this.recoverDict).length !== tempList.length\n      ) {\n        isConflict = true;\n      } else if (['scan', 'skip'].includes(type)) {\n        isConflict = Object.keys(this.originalDict).some(\n          (priority) =>\n            JSON.stringify(this.originalDict[priority])\n            !== JSON.stringify(\n              tempList.find((item) => item.priority === Number(priority)),\n            ),\n        );\n      } else {\n        isConflict = Object.keys(this.recoverDict).some(\n          (priority) => !this.recoverDict[priority],\n        );\n      }\n\n      this.toggleRulesModified({\n        value: isConflict,\n        status: isConflict ? 'occupied' : 'free',\n        vid: this.version?.id ?? null,\n        rid: this.$route.params.rid,\n      });\n    },\n\n    operandValidator(rule, value, callback) {\n      const regex = /\\[(.+?)\\]/g;\n      const dateRegex = /^[1-9]\\d{3}-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])){0,1}$/;\n      const id = regex.exec(rule.fullField)[1];\n      const index = regex.exec(rule.fullField)[1];\n      const { operator } = this.rulesForm.ruleList[id].condition[index];\n      const checkNumber = ['>', '>=', '<', '<='].indexOf(operator) !== -1;\n      const isNotNumberOrDate\n        = Number.isNaN(Number(value)) && !dateRegex.test(value);\n\n      if (\n        !value\n        && value !== 0\n        && !['is null', 'is not null'].includes(operator)\n      ) {\n        callback(new Error('匹配值不能为空'));\n      } else if (checkNumber && isNotNumberOrDate) {\n        callback(new Error('请输入合法的数字或日期(如：2020-01-05)'));\n      } else {\n        callback();\n      }\n    },\n\n    isNotBlank(str) {\n      return !str ? false : /[^\\s]/.test(str);\n    },\n\n    addToNullArr(rule) {\n      const ruleInArr = this.nullArr.find((item) => item.uid === rule.uid);\n\n      !ruleInArr && this.nullArr.unshift(rule);\n    },\n\n    addToCompareDict(key, rule) {\n      const addToDuplicatedArr = (key) => {\n        if (this.duplicatedArr.includes(key)) return;\n        this.duplicatedArr.push(key);\n      };\n      const dictValue = this.compareDict[key];\n\n      if (!dictValue) {\n        this.compareDict[key] = [rule];\n        return;\n      }\n\n      const ruleInDict = dictValue.find((item) => item.uid === rule.uid);\n\n      if (!ruleInDict) dictValue.push(rule);\n\n      if (dictValue.length > 1) {\n        addToDuplicatedArr(key);\n        this.showMessage(key, dictValue);\n      }\n    },\n\n    deleteFromNullArr(rule) {\n      const resIndex = this.nullArr.findIndex(({ uid }) => uid === rule.uid);\n\n      resIndex !== -1 && this.nullArr.splice(resIndex, 1);\n    },\n\n    deleteFromCompareDict(key, rule) {\n      const deleteFromDuplicateArr = (key) => {\n        const resIndex = this.duplicatedArr.indexOf(key);\n        resIndex !== -1 && this.duplicatedArr.splice(resIndex, 1);\n      };\n      const dictValue = this.compareDict[key];\n\n      if (!dictValue) return;\n\n      const index = dictValue.findIndex(({ uid }) => uid === rule.uid);\n\n      index !== -1 && dictValue.splice(index, 1);\n\n      this.closeMessage(key);\n\n      dictValue.length <= 1\n        ? deleteFromDuplicateArr(key)\n        : this.showMessage(key, dictValue);\n    },\n\n    disabledInputColumnCondition(currentDataType, conditionIndex) {\n      const conditions = this.ruleCached.condition\n        ? this.ruleCached.condition[conditionIndex]\n        : {};\n      const firstDataType = this.getFirstDataType(conditions);\n      const firstOperator = conditions?.operator;\n\n      if (currentDataType === 'STRING') {\n        return false;\n      }\n\n      if (this.keepFirstSelected && !firstDataType) {\n        return currentDataType !== 'STRING';\n      }\n\n      if (firstDataType) {\n        if (firstDataType === 'STRING') {\n          return false;\n        }\n\n        const firstCheck = this.firstDataTypeEqualCheck(\n          firstDataType,\n          currentDataType,\n        );\n\n        if (firstOperator) {\n          const validDataTypes = CONFIG.operatorMap[firstOperator];\n          return validDataTypes.indexOf(currentDataType) === -1 || firstCheck;\n        }\n\n        return firstCheck;\n      }\n\n      if (firstOperator) {\n        const validDataTypes = CONFIG.operatorMap[firstOperator];\n        return validDataTypes.indexOf(currentDataType) === -1;\n      }\n\n      return false;\n    },\n\n    disabledOperatorCondition(currentOperator, conditionIndex) {\n      const conditions = this.ruleCached.condition\n        ? this.ruleCached.condition[conditionIndex]\n        : {};\n      const firstDataType = this.getFirstDataType(conditions);\n\n      if (\n        this.keepFirstSelected\n        && (firstDataType === 'STRING' || !firstDataType)\n      ) {\n        return ['match', 'not match'].indexOf(currentOperator) === -1;\n      }\n\n      if (firstDataType) {\n        const validOperators = CONFIG.columnDataTypeMap[firstDataType];\n        return validOperators.indexOf(currentOperator) === -1;\n      }\n\n      return false;\n    },\n\n    getFirstDataType(conditions) {\n      if (this.$util.isEmptyObject(conditions)) return null;\n\n      let firstDataType = null;\n\n      const columns = conditions.column;\n      const columnLth = columns.length;\n\n      for (let i = 0; i < columnLth; i++) {\n        if (columns[i]) {\n          const hitColumn = this.ruleSet.input_columns.find(\n            (item) => item.name === columns[i],\n          );\n\n          if (hitColumn && hitColumn.type !== 'STRING') {\n            firstDataType = hitColumn.type;\n            break;\n          }\n        }\n      }\n\n      return firstDataType;\n    },\n\n    firstDataTypeEqualCheck(firstDataType, currentDataType) {\n      const numberTypes = ['INT', 'FLOAT'];\n\n      if (numberTypes.indexOf(firstDataType) !== -1) {\n        return numberTypes.indexOf(currentDataType) === -1;\n      }\n\n      return currentDataType !== firstDataType;\n    },\n\n    execNewRuleItem(priority, ruleItem) {\n      if (!this.isSearching) {\n        this.rulesForm.ruleList.splice(priority, 0, ruleItem);\n        this.updateRulePriorityWithType();\n      } else {\n        this.cacheRules.splice(priority, 0, ruleItem);\n        this.updateRulePriorityWithType('backup');\n\n        let newSearchIndex;\n\n        this.rulesForm.ruleList.forEach((item, index) => {\n          if (item.priority < priority) return;\n\n          item.priority === priority\n            ? (newSearchIndex = item.searchIndex)\n            : (this.rulesForm.ruleList[index].searchIndex += 1);\n        });\n\n        ruleItem.searchIndex = newSearchIndex + 1;\n        this.rulesForm.ruleList.splice(newSearchIndex, 0, ruleItem);\n      }\n\n      this.goToCurrentRow(\n        ruleItem[this.isSearching ? 'searchIndex' : 'priority'],\n      );\n    },\n\n    checkConditionError({ column, operator }) {\n      if (!column.length || !operator) return '';\n\n      const hitColumn = this.ruleSet.input_columns.find(\n        ({ name }) => name === column[0],\n      );\n\n      if (hitColumn) {\n        const validOperators = CONFIG.columnDataTypeMap[hitColumn.type];\n        return validOperators.indexOf(operator) !== -1\n          ? ''\n          : this.$t('rulesets.ph.no_match_rule_field_type');\n      }\n    },\n\n    checkConditionFullNull(condition) {\n      return !!condition.find(\n        ({ column, operand, operator }) =>\n          operator === ''\n          && column.length === 0\n          && !['is null', 'is not null'].includes(operator)\n          && operand === '',\n      );\n    },\n\n    checkConditionNull(condition) {\n      return !!condition.find(\n        ({ column, operand, operator }) =>\n          operator === ''\n          || column.length === 0\n          || (!['is null', 'is not null'].includes(operator) && operand === ''),\n      );\n    },\n\n    /**\n     * 对nullArr进行非空检测；\n     */\n    checkData() {\n      const nullList = [];\n\n      // todo: 这里检测为空的逻辑有点问题\n      this.rulesForm.ruleList.forEach((rule) => {\n        const condition = rule.condition[0];\n        if (\n          rule.value === ''\n          || condition.operator === ''\n          || (!['is null', 'is not null'].includes(condition.operator)\n            && condition.operand === '')\n          || condition.column.length === 0\n        ) {\n          nullList.push(rule.priority);\n        }\n      });\n\n      if (nullList.length) {\n        this.sendNullMsg(nullList);\n        return true;\n      }\n\n      const repeatList = [];\n\n      this.duplicatedArr.slice(0, 3).forEach((item) => {\n        const list = this.compareDict[item];\n\n        if (list.length > 1) {\n          list.forEach((item) => repeatList.push(item.priority));\n        }\n      });\n\n      if (repeatList.length) {\n        this.sendRepeatMsg(repeatList);\n        return true;\n      }\n\n      return false;\n    },\n\n    sortRuleCondition(condition) {\n      const sortedCondition = [...condition].sort((a, b) => {\n        if (a.operand > b.operand) return 1;\n        if (a.operand < b.operand) return -1;\n\n        if (a.operator > b.operator) return 1;\n        if (a.operator < b.operator) return -1;\n\n        const columnA = [...a.column].sort().join();\n        const columnB = [...b.column].sort().join();\n\n        return columnA > columnB ? 1 : -1;\n      });\n\n      return JSON.stringify(sortedCondition);\n    },\n\n    goToCurrentRow(priority) {\n      this.currentPage = Math.ceil(priority / this.pageSize);\n      setTimeout(() => {\n        this.$refs.rulesRef.setCurrentRow(\n          this.rulesForm.ruleList[priority - 1],\n        );\n      }, 0);\n    },\n\n    cancelCurrentRow(e) {\n      const { rulesRef } = this.$refs;\n\n      if (!e && rulesRef) {\n        rulesRef.setCurrentRow();\n        return;\n      }\n\n      const headerDom = this.$el.querySelector('.el-table__header-wrapper');\n\n      if (this.$el.contains(e.target) && !headerDom?.contains(e.target)) {\n        return;\n      }\n\n      if (rulesRef) {\n        rulesRef.setCurrentRow();\n      }\n    },\n\n    showMessage(key, dictValue) {\n      this.messageDict[key]?.close();\n      this.messageDict[key] = this.$message.error({\n        offset: 65,\n        duration: 0,\n        showClose: true,\n        message: `优先级为 (${dictValue\n          .map((item) => item.priority)\n          .join(', ')}) 的规则重复，请重新编辑！`,\n      });\n    },\n\n    closeMessage(key) {\n      const message = this.messageDict[key];\n\n      if (message) {\n        message.close();\n        delete this.messageDict[key];\n      }\n    },\n\n    sendRepeatMsg(repeatArr) {\n      if (!repeatArr.length) {\n        return;\n      }\n\n      const text = repeatArr.join(', ');\n\n      this.$tip.MsgError(`优先级为 (${text}) 的规则重复，请重新编辑！`);\n\n      if (this.isSearching) this.$emit('resetSearch');\n\n      this.$nextTick(() => {\n        this.goToCurrentRow(repeatArr[0]);\n      });\n    },\n\n    sendNullMsg(nullArr) {\n      if (!nullArr.length) {\n        return;\n      }\n\n      const text = nullArr.slice(0, 3).join('、');\n      let message = `第${text}等${nullArr.length}条规则未填写完毕，请检查！`;\n\n      if (this.isSearching) {\n        message = `第${text}等${nullArr.length}条规则未填写完毕，请清除搜索后检查！`;\n      }\n\n      this.$tip.MsgError(message);\n      this.$nextTick(() => {\n        this.goToCurrentRow(nullArr[0]);\n      });\n    },\n\n    updateRulePriorityWithType(type = undefined) {\n      // 这里直接用 forEach 更新的原因是为了保证在搜索情况下\n      // 新增/复制表达式时能直接同步更新其优先级\n      if (type === 'backup') {\n        this.cacheRules.forEach((item, index) => {\n          item.priority = index + 1;\n        });\n        return;\n      }\n\n      this.rulesForm.ruleList.forEach((item, index) => {\n        item.priority = index + 1;\n      });\n      this.cacheRules = this.$util.simpleDeepCopy(this.rulesForm.ruleList); // 不明确\n    },\n\n    handleSortableOnEnd({ oldIndex, newIndex }) {\n      if (oldIndex === newIndex) return;\n\n      const { ruleList } = this.rulesForm;\n      const pageIndex = (this.currentPage - 1) * this.pageSize;\n      const targetRow = ruleList.splice(oldIndex + pageIndex, 1)[0];\n\n      ruleList.splice(newIndex + pageIndex, 0, targetRow);\n\n      this.$nextTick(() => {\n        this.updateRulePriorityWithType();\n        this.cancelCurrentRow();\n        this.checkRuleModified('scan');\n      });\n    },\n\n    handleOpenRulePriority(visible, priority) {\n      if (!visible) {\n        this.$refs.priorityFormRef.resetFields();\n        return;\n      }\n\n      this.priorityForm = {\n        prev: priority,\n        next: priority,\n      };\n    },\n\n    /** 手动更改优先级 */\n    handleSortableOnPopover(row, index) {\n      const { prev, next } = this.priorityForm;\n      // const { ruleList } = this.rulesForm;\n\n      if (prev === next) return;\n\n      const tempTableData = this.rulesForm.ruleList;\n\n      if (next > prev) {\n        tempTableData.splice(next, 0, row);\n        tempTableData.splice(prev - 1, 1);\n      } else {\n        tempTableData.splice(prev - 1, 1);\n        tempTableData.splice(next - 1, 0, row);\n      }\n\n      // 深拷贝导致新增的规则在进行nullArr验证时数据对不上（因为nullArr数组存的对象是和rulelist数组进行共享的）\n      // this.rulesForm.ruleList = this.$util.simpleDeepCopy(tempTableData);\n      this.$nextTick(() => {\n        this.updateRulePriorityWithType();\n        this.goToCurrentRow(\n          next > this.rulesForm.ruleList.length\n            ? this.rulesForm.ruleList.length\n            : next,\n        );\n        this.checkRuleModified('scan');\n      });\n\n      this.$refs[`priorityRef-${index}`].doClose();\n    },\n\n    handleCheckRule(row, value, type = undefined) {\n      if (!row.value && this.checkConditionFullNull(row.condition)) {\n        this.checkRuleModified(type);\n        return;\n      }\n\n      if (\n        this.$util.isEmptyObject(this.originalDict)\n        || this.originalDict[row.priority]\n      ) {\n        this.recoverDict = {\n          ...this.recoverDict,\n          [row.priority]:\n            JSON.stringify(row)\n            === JSON.stringify(this.originalDict[row.priority]),\n        };\n      }\n\n      const newVal = Array.isArray(value) ? value.sort().join(',') : value;\n\n      Array.isArray(this.valueCached) && this.valueCached.sort().join(',');\n\n      this.deleteFromCompareDict(this.conditionKeyCached, this.ruleCached);\n\n      if (newVal && !this.checkConditionNull(row.condition)) {\n        const newKey = this.sortRuleCondition(row.condition);\n\n        setTimeout(() => {\n          this.addToCompareDict(newKey, row);\n        }, 0);\n      }\n\n      this.resetCached();\n    },\n\n    handleFocusRule(rule, value) {\n      this.ruleCached = rule;\n      this.conditionKeyCached = this.sortRuleCondition(rule.condition);\n      this.valueCached = value;\n    },\n\n    handleRemoveRuleInputColumn(val, rule, index, value) {\n      this.$refs.rulesRef.setCurrentRow(rule);\n\n      if (this.inputColumnVisible) return;\n\n      const oldCondition = this.$util.simpleDeepCopy(rule.condition);\n      oldCondition[index].column.push(val);\n\n      const oldRule = {\n        ...rule,\n        condition: oldCondition,\n      };\n      this.handleFocusRule(oldRule, [...value].push(val));\n      this.handleCheckRule(rule, value);\n    },\n\n    handleVisibleChangeRule(bool, rule, value) {\n      this.inputColumnVisible = bool;\n      this.$refs.rulesRef.setCurrentRow(rule);\n\n      bool\n        ? this.handleFocusRule(rule, value)\n        : this.handleCheckRule(rule, value);\n    },\n\n    handleClickOperator(operator) {\n      if (\n        this.keepFirstSelected\n        && ['match', 'not match'].indexOf(operator) === -1\n      ) {\n        this.$tip.Msg('当前取值模式下，仅允许添加正则相关表达式');\n      }\n    },\n\n    handleBlurRuleResult(row) {\n      this.valueCached = '';\n      this.handleCheckRule(row, row.value, 'skip');\n    },\n\n    handleChangeOperator(id, index, operator) {\n      if (['is null', 'is not null'].includes(operator)) return;\n\n      this.$nextTick(() => {\n        this.$refs.rulesForm.validateField(\n          `ruleList[${id}].condition[${index}].operand`,\n        );\n      });\n    },\n\n    handleChangeOperand(id, index) {\n      this.rulesForm.ruleList[id].condition[\n        index\n      ].operand = this.rulesForm.ruleList[id].condition[index].operand\n        .replace(/，/g, ',')\n        .split(',')\n        .map((operandItem) => operandItem.trim())\n        .join(',');\n    },\n\n    handleChangeRuleResult(rule) {\n      rule.value = rule.value.replace(/，/g, ',').trim();\n    },\n\n    handleAddRuleCondition(rule) {\n      this.deleteFromCompareDict(this.sortRuleCondition(rule.condition), rule);\n\n      rule.condition.push(this.$util.simpleDeepCopy(this.defaultRuleCondition));\n\n      this.addToNullArr(rule);\n\n      if (\n        this.$util.isEmptyObject(this.originalDict)\n        || this.originalDict[rule.priority]\n      ) {\n        this.recoverDict = {\n          ...this.recoverDict,\n          [rule.priority]:\n            JSON.stringify(rule)\n            === JSON.stringify(this.originalDict[rule.priority]),\n        };\n      }\n    },\n\n    handleDeleteRuleCondition(rule, index) {\n      this.deleteFromCompareDict(this.sortRuleCondition(rule.condition), rule);\n      rule.condition.splice(index, 1);\n\n      if (\n        this.$util.isEmptyObject(this.originalDict)\n        || this.originalDict[rule.priority]\n      ) {\n        this.recoverDict = {\n          ...this.recoverDict,\n          [rule.priority]:\n            JSON.stringify(rule)\n            === JSON.stringify(this.originalDict[rule.priority]),\n        };\n      }\n\n      setTimeout(() => {\n        if (this.checkConditionNull(rule.condition)) return;\n        this.addToCompareDict(this.sortRuleCondition(rule.condition), rule);\n      }, 0);\n    },\n\n    /** 新增一条规则 */\n    handleAddRule() {\n      const newRuleItem = this.initRuleItem(this.defaultRuleItem);\n      this.clickedRow = newRuleItem.priority;\n\n      if (this.isSearching) {\n        this.cacheRules.push(newRuleItem);\n\n        newRuleItem.searchIndex = this.rulesForm.ruleList.length + 1;\n        this.rulesForm.ruleList.push(newRuleItem);\n      } else {\n        this.rulesForm.ruleList.push(newRuleItem);\n        this.cacheRules = this.$util.simpleDeepCopy(this.rulesForm.ruleList); // 不明确\n      }\n\n      this.goToCurrentRow(\n        newRuleItem[this.isSearching ? 'searchIndex' : 'priority'],\n      );\n      this.addToNullArr(newRuleItem); // 同一个对象被两个数组共享（万恶之源，因为深拷贝会导致两边的数据不同步，而且还需要考虑元素操作在两边是同步的）\n      this.checkRuleModified();\n    },\n\n    /** 在下方插入新规则 */\n    handleInsertRule(priority) {\n      const newRuleItem = this.initRuleItem(this.defaultRuleItem);\n      this.clickedRow = priority + 1;\n      this.execNewRuleItem(priority, newRuleItem);\n      this.addToNullArr(newRuleItem);\n      this.checkRuleModified('scan');\n    },\n\n    handleCopyRule(priority) {\n      const template = this.isSearching\n        ? this.cacheRules\n        : this.rulesForm.ruleList;\n      const newRuleItem = this.initRuleItem(template[priority - 1]);\n\n      this.clickedRow = priority + 1;\n      this.execNewRuleItem(priority, newRuleItem);\n      this.checkRuleModified('scan');\n\n      setTimeout(() => {\n        this.addToCompareDict(\n          this.sortRuleCondition(newRuleItem.condition),\n          newRuleItem,\n        );\n      }, 0);\n    },\n\n    handleDeleteRule(row) {\n      const { priority } = row;\n      const key = this.sortRuleCondition(row.condition);\n\n      this.deleteFromCompareDict(key, row);\n      this.deleteFromNullArr(row);\n\n      if (!this.isSearching) {\n        this.rulesForm.ruleList.splice(priority - 1, 1);\n        this.updateRulePriorityWithType();\n        this.checkRuleModified('scan');\n        return;\n      }\n\n      this.cacheRules.splice(priority - 1, 1);\n      this.updateRulePriorityWithType('backup');\n\n      let newSearchIndex;\n\n      this.rulesForm.ruleList.forEach((item) => {\n        if (item.priority === priority) {\n          newSearchIndex = item.searchIndex;\n        }\n      });\n      this.rulesForm.ruleList.splice(newSearchIndex - 1, 1);\n      this.rulesForm.ruleList.forEach((item, index) => {\n        if (item.priority > priority) {\n          this.rulesForm.ruleList[index].searchIndex -= 1;\n        }\n      });\n      this.checkRuleModified('scan');\n    },\n\n    handleSave() {\n      const { $tip } = this;\n\n      this.$refs.rulesForm.validate((valid) => {\n        if (!valid) {\n          $tip.MsgError(this.$t('rulesets.note.rule_save_limit'));\n          return;\n        }\n\n        /** 表单检验通过还要进行检测的目的：因为表单检验的只是当前页的数据，而改动可能涉及到其它页的数据 */\n        if (this.isSearching) {\n          $tip.MsgError(this.$t('rulesets.note.save_search_limit'));\n        } else if (this.rulesForm.ruleList.length === 0) {\n          $tip.MsgError(this.$t('rulesets.note.save_empty_limit'));\n        } else if (this.checkData()) {\n          console.log('检查不通过');\n        } else if (!this.isRulesModified) {\n          this.$tip.MsgSuccess(this.$t('common.note.save_ok'));\n        } else this.handleCommitRules('save');\n      });\n    },\n\n    handleValidateRule(isPublishPartition = false) {\n      this.$refs.rulesForm.validate((valid) => {\n        this.toggleLeavePublish(false);\n\n        if (!valid) {\n          return this.$tip.MsgError(this.$t('rulesets.note.rule_save_limit'));\n        }\n\n        if (this.isSearching) {\n          this.$tip.MsgWarning(this.$t('rulesets.note.publish_search_limit'));\n        } else if (this.rulesForm.ruleList.length === 0) {\n          this.$tip.MsgWarning(this.$t('rulesets.note.save_empty_limit'));\n        } else if (this.checkData()) {\n          console.log('检查不通过');\n        } else if (\n          !isPublishPartition\n          && !this.isRulesDraft\n          && !this.isRulesModified\n        ) {\n          this.$tip.MsgSuccess(this.$t('common.note.publish_ok'));\n        } else {\n          this.isPublishPartition = isPublishPartition;\n          this.showDialog = true;\n        }\n      });\n    },\n\n    handleCommitRules(action = 'save', versionParams = undefined) {\n      const data = this.$util.simpleDeepCopy(\n        this.isSearching ? this.cacheRules : this.rulesForm.ruleList,\n      );\n      const params = {};\n\n      params.rules = data.map((rule) => {\n        const cond = rule.condition.map(({ column, operator, operand }) => ({\n          operand,\n          operator,\n          column: column.join(','),\n        }));\n\n        return {\n          id: rule.id !== 0 ? rule.id : null,\n          value: rule.value,\n          remark: rule.remark,\n          condition: cond,\n        };\n      });\n      params.action = action;\n      params.version_id = this.version.id ?? null;\n\n      if (action === 'publish') {\n        params.publish_desc = versionParams.publish_desc;\n      } else if (action === 'partition') {\n        params.action = 'publish';\n        params.version = versionParams.version;\n        delete params.version_id;\n      }\n\n      this.fetchUpdateRules(params);\n    },\n\n    async fetchUpdateRules(params) {\n      try {\n        this.$emit('stop-listen');\n\n        await this.updateEditConflict({\n          status: 'free',\n          vid: this.version?.id ?? null,\n          rid: this.$route.params.rid,\n        });\n\n        params.action === 'publish'\n          ? (this.isPublishLoading = true)\n          : (this.isSaveLoading = true);\n\n        const { rid } = this.$route.params;\n        const res = await this.saveOrPublishRules({\n          rid,\n          params,\n          vid: this.version?.id ?? null,\n          type: params.action,\n        });\n\n        if (res?.ok) {\n          this.$refs.rulesForm.clearValidate();\n          params.action === 'publish' && (this.showDialog = false);\n        }\n      } catch (error) {\n        0;\n      } finally {\n        this.isSaveLoading = false;\n        this.isPublishLoading = false;\n      }\n    },\n  }",
+          "start": {
+            "offset": 24026,
+            "line": 722,
+            "column": 11
+          },
+          "end": {
+            "offset": 51080,
+            "line": 1692,
+            "column": 3
+          }
+        }
+      }
+    },
+    "loc": {
+      "source": "{\n  name: 'RulesTable',\n\n  components: {\n    VersionForm,\n    RulesFooter,\n    RulesTableRemark,\n    ElTableDraggable,\n  },\n\n  props: {\n    searchWords: {\n      type: Array,\n      default: () => [],\n    },\n  },\n\n  data() {\n    const validatePriority = (rule, value, cb) => {\n      this.canSortPriorityBtn = true;\n\n      if (typeof value !== 'number' || value <= 0) {\n        this.canSortPriorityBtn = false;\n        cb(new Error(this.$t('rulesets.ph.priority')));\n      } else {\n        cb();\n      }\n    };\n\n    return {\n      isSaveLoading: false,\n      isSearchLoading: false,\n      isPublishLoading: false,\n      isPublishPartition: false,\n      inputColumnVisible: false,\n      showDialog: false,\n      showPriorityModal: false,\n      canSortPriorityBtn: true,\n\n      pageSize: 10,\n      currentPage: 1,\n\n      cacheRules: [],\n      pageSizes: [10, 20, 50, 100],\n\n      timerDraft: null,\n      clickedRow: '',\n      operators: CONFIG.defaultOperators,\n      rulesForm: {\n        ruleList: [],\n      },\n      defaultRuleItem: {\n        priority: 99999,\n        id: 0,\n        value: '',\n        remark: '',\n        condition: [\n          {\n            column: [],\n            operand: '',\n            operator: '',\n          },\n        ],\n      },\n      defaultRuleCondition: {\n        column: [],\n        operand: '',\n        operator: '',\n      },\n      priorityForm: {\n        prev: '',\n        next: '',\n      },\n      priorityRule: {\n        next: [{ validator: validatePriority, trigger: 'change' }],\n      },\n\n      // 实时检测\n      ruleCached: {},\n      conditionKeyCached: '',\n      valueCached: '',\n      nullArr: [], // 用于存放新增的规则？\n      duplicatedArr: [],\n      compareDict: {},\n      originalDict: {},\n      recoverDict: {},\n      messageDict: {},\n    };\n  },\n\n  computed: {\n    ...mapGetters(['me', 'checkProjectRole', 'hasEditConflict']),\n\n    ...mapState({\n      rules: (state) => state.rulesets.rules,\n      ruleSet: (state) => state.rulesets.ruleSet,\n      version: (state) => state.rulesets.version,\n      isRulesDraft: (state) => state.rulesets.isRulesDraft,\n      isViewHistory: (state) => state.rulesets.isViewHistory,\n      isLeavePublish: (state) => state.rulesets.isLeavePublish,\n      isRulesModified: (state) => state.rulesets.isRulesModified,\n    }),\n\n    filterRuleList() {\n      const { currentPage, pageSize } = this;\n      const start = (currentPage - 1) * pageSize;\n      const end = currentPage * pageSize;\n\n      return this.rulesForm.ruleList.slice(start, end);\n    },\n\n    total() {\n      return this.rulesForm.ruleList.length || 1;\n    },\n\n    isSearching() {\n      return this.searchWords.length !== 0;\n    },\n\n    keepFirstSelected() {\n      if (this.$util.isEmptyObject(this.ruleSet)) return false;\n\n      return this.ruleSet.extra.result_strategy.mode === 'KEEP_FIRST';\n    },\n  },\n\n  watch: {\n    rulesForm: {\n      deep: true,\n      immediate: true,\n      handler({ ruleList }) {\n        const validRegexOperators = ['', 'match', 'not match'];\n        let checkResult = true;\n\n        ruleList.forEach((item) => {\n          checkResult = item.condition.every(\n            ({ operator }) => !validRegexOperators.includes(operator),\n          );\n        });\n\n        this.toggleKeepFirstSelectMode(checkResult);\n      },\n    },\n\n    rules: {\n      immediate: true,\n      handler(newVal) {\n        this.resetRealTime();\n\n        if (newVal.length !== 0) {\n          this.rulesForm.ruleList = this.compareReactive(newVal);\n        } else {\n          this.rulesForm.ruleList = [];\n          this.initCurrentRow();\n        }\n\n        this.cacheRules = this.$util.simpleDeepCopy(this.rulesForm.ruleList); // 不明确\n      },\n    },\n\n    recoverDict: {\n      handler: 'checkRuleModified',\n    },\n\n    isLeavePublish(newVal) {\n      newVal && this.handleValidateRule(false);\n    },\n\n    searchWords() {\n      this.initCurrentRuleList();\n    },\n\n    showDialog(newVal) {\n      if (!newVal) {\n        this.$refs.partitionRef.reset();\n      }\n    },\n  },\n\n  created() {\n    this.initCurrentRuleList();\n    document.addEventListener('click', this.cancelCurrentRow);\n  },\n\n  beforeDestroy() {\n    this.toggleViewHistory(false);\n    this.resetRealTime();\n    document.removeEventListener('click', this.cancelCurrentRow);\n  },\n\n  methods: {\n    ...mapActions([\n      'readRules',\n      'readRuleSetLogs',\n      'updateEditConflict',\n      'saveOrPublishRules',\n      'toggleViewHistory',\n      'toggleRulesModified',\n      'toggleLeavePublish',\n      'toggleKeepFirstSelectMode',\n    ]),\n\n    compareReactive(rules) {\n      const result = rules.reduce((cur, rule) => {\n        const condition = rule.condition.map((item) => ({\n          ...item,\n          column: item.column.split(','),\n        }));\n        const condStr = this.sortRuleCondition(condition);\n        const item = {\n          condition,\n          uid: id++,\n          id: rule.id,\n          value: rule.value,\n          remark: rule.remark,\n          priority: rule.priority,\n        };\n\n        this.compareDict[condStr]\n          ? this.compareDict[condStr].push(item)\n          : (this.compareDict[condStr] = [item]);\n        this.originalDict[rule.priority] = this.$util.simpleDeepCopy(item); // 不明确\n        this.recoverDict[rule.priority] = true;\n\n        cur.push(item);\n        return cur;\n      }, []);\n\n      result.sort((a, b) => a.priority - b.priority);\n      return result;\n    },\n\n    initCurrentRow() {\n      if (\n        this.checkProjectRole('general')\n        || this.hasEditConflict\n        || this.isViewHistory\n      ) {\n        return;\n      }\n\n      if (this.rulesForm.ruleList.length === 0) {\n        this.rulesForm.ruleList.push({\n          ...this.$util.simpleDeepCopy(this.defaultRuleItem),\n          priority: 1,\n        });\n      }\n\n      if (this.$refs.rulesRef && this.$refs.rulesRef.setCurrentRow) {\n        this.$refs.rulesRef.setCurrentRow(this.rulesForm.ruleList[0]);\n      }\n    },\n\n    initCurrentRuleList() {\n      const containOperandOrValue = (item) =>\n        this.searchWords.every((word) => {\n          const lowerWord = word.toLowerCase();\n          const containOperand = item.condition.some(\n            (condItem) =>\n              String(condItem.operand).toLowerCase().indexOf(lowerWord) !== -1,\n          );\n          const containValue\n            = item.value.toLowerCase().indexOf(lowerWord) !== -1;\n\n          return containOperand || containValue;\n        });\n\n      this.isSearchLoading = true;\n\n      setTimeout(() => {\n        this.rulesForm.ruleList = [...this.cacheRules]; // 可能有问题\n        this.cacheRules = [...this.rulesForm.ruleList];\n\n        const filteredData = this.cacheRules.filter((item) =>\n          containOperandOrValue(item));\n\n        if (this.isSearching) {\n          filteredData.forEach((item, index) => {\n            item.searchIndex = index + 1;\n          });\n          this.rulesForm.ruleList = filteredData;\n        }\n\n        this.isSearchLoading = false;\n      }, 300);\n    },\n\n    initRuleItem(temp) {\n      const item = this.$util.simpleDeepCopy(temp);\n\n      item.id = 0;\n      item.uid = id++;\n      item.remark = '';\n      item.priority = this.isSearching\n        ? this.cacheRules.length + 1\n        : this.rulesForm.ruleList.length + 1;\n\n      return item;\n    },\n\n    resetRealTime() {\n      Object.keys(this.messageDict).forEach((key) =>\n        this.messageDict[key].close());\n\n      this.nullArr = [];\n      this.compareDict = {};\n      this.messageDict = {};\n      this.duplicatedArr = [];\n      this.resetCached();\n    },\n\n    resetCached() {\n      this.ruleCached = {};\n      this.conditionKeyCached = '';\n      this.valueCached = '';\n    },\n\n    handleRowClick(row) {\n      this.clickedRow = row.id;\n    },\n\n    checkRuleModified(type = undefined) {\n      // 区分是否在搜索状况下检测\n      const tempList = this.isSearching\n        ? this.cacheRules.map((item) => {\n          const { searchIndex, ...props } = item;\n          return { ...props };\n        })\n        : this.rulesForm.ruleList;\n\n      let isConflict = false;\n\n      if (\n        type !== 'skip'\n        && Object.keys(this.recoverDict).length !== tempList.length\n      ) {\n        isConflict = true;\n      } else if (['scan', 'skip'].includes(type)) {\n        isConflict = Object.keys(this.originalDict).some(\n          (priority) =>\n            JSON.stringify(this.originalDict[priority])\n            !== JSON.stringify(\n              tempList.find((item) => item.priority === Number(priority)),\n            ),\n        );\n      } else {\n        isConflict = Object.keys(this.recoverDict).some(\n          (priority) => !this.recoverDict[priority],\n        );\n      }\n\n      this.toggleRulesModified({\n        value: isConflict,\n        status: isConflict ? 'occupied' : 'free',\n        vid: this.version?.id ?? null,\n        rid: this.$route.params.rid,\n      });\n    },\n\n    operandValidator(rule, value, callback) {\n      const regex = /\\[(.+?)\\]/g;\n      const dateRegex = /^[1-9]\\d{3}-(0[1-9]|1[0-2])(-(0[1-9]|[1-2][0-9]|3[0-1])){0,1}$/;\n      const id = regex.exec(rule.fullField)[1];\n      const index = regex.exec(rule.fullField)[1];\n      const { operator } = this.rulesForm.ruleList[id].condition[index];\n      const checkNumber = ['>', '>=', '<', '<='].indexOf(operator) !== -1;\n      const isNotNumberOrDate\n        = Number.isNaN(Number(value)) && !dateRegex.test(value);\n\n      if (\n        !value\n        && value !== 0\n        && !['is null', 'is not null'].includes(operator)\n      ) {\n        callback(new Error('匹配值不能为空'));\n      } else if (checkNumber && isNotNumberOrDate) {\n        callback(new Error('请输入合法的数字或日期(如：2020-01-05)'));\n      } else {\n        callback();\n      }\n    },\n\n    isNotBlank(str) {\n      return !str ? false : /[^\\s]/.test(str);\n    },\n\n    addToNullArr(rule) {\n      const ruleInArr = this.nullArr.find((item) => item.uid === rule.uid);\n\n      !ruleInArr && this.nullArr.unshift(rule);\n    },\n\n    addToCompareDict(key, rule) {\n      const addToDuplicatedArr = (key) => {\n        if (this.duplicatedArr.includes(key)) return;\n        this.duplicatedArr.push(key);\n      };\n      const dictValue = this.compareDict[key];\n\n      if (!dictValue) {\n        this.compareDict[key] = [rule];\n        return;\n      }\n\n      const ruleInDict = dictValue.find((item) => item.uid === rule.uid);\n\n      if (!ruleInDict) dictValue.push(rule);\n\n      if (dictValue.length > 1) {\n        addToDuplicatedArr(key);\n        this.showMessage(key, dictValue);\n      }\n    },\n\n    deleteFromNullArr(rule) {\n      const resIndex = this.nullArr.findIndex(({ uid }) => uid === rule.uid);\n\n      resIndex !== -1 && this.nullArr.splice(resIndex, 1);\n    },\n\n    deleteFromCompareDict(key, rule) {\n      const deleteFromDuplicateArr = (key) => {\n        const resIndex = this.duplicatedArr.indexOf(key);\n        resIndex !== -1 && this.duplicatedArr.splice(resIndex, 1);\n      };\n      const dictValue = this.compareDict[key];\n\n      if (!dictValue) return;\n\n      const index = dictValue.findIndex(({ uid }) => uid === rule.uid);\n\n      index !== -1 && dictValue.splice(index, 1);\n\n      this.closeMessage(key);\n\n      dictValue.length <= 1\n        ? deleteFromDuplicateArr(key)\n        : this.showMessage(key, dictValue);\n    },\n\n    disabledInputColumnCondition(currentDataType, conditionIndex) {\n      const conditions = this.ruleCached.condition\n        ? this.ruleCached.condition[conditionIndex]\n        : {};\n      const firstDataType = this.getFirstDataType(conditions);\n      const firstOperator = conditions?.operator;\n\n      if (currentDataType === 'STRING') {\n        return false;\n      }\n\n      if (this.keepFirstSelected && !firstDataType) {\n        return currentDataType !== 'STRING';\n      }\n\n      if (firstDataType) {\n        if (firstDataType === 'STRING') {\n          return false;\n        }\n\n        const firstCheck = this.firstDataTypeEqualCheck(\n          firstDataType,\n          currentDataType,\n        );\n\n        if (firstOperator) {\n          const validDataTypes = CONFIG.operatorMap[firstOperator];\n          return validDataTypes.indexOf(currentDataType) === -1 || firstCheck;\n        }\n\n        return firstCheck;\n      }\n\n      if (firstOperator) {\n        const validDataTypes = CONFIG.operatorMap[firstOperator];\n        return validDataTypes.indexOf(currentDataType) === -1;\n      }\n\n      return false;\n    },\n\n    disabledOperatorCondition(currentOperator, conditionIndex) {\n      const conditions = this.ruleCached.condition\n        ? this.ruleCached.condition[conditionIndex]\n        : {};\n      const firstDataType = this.getFirstDataType(conditions);\n\n      if (\n        this.keepFirstSelected\n        && (firstDataType === 'STRING' || !firstDataType)\n      ) {\n        return ['match', 'not match'].indexOf(currentOperator) === -1;\n      }\n\n      if (firstDataType) {\n        const validOperators = CONFIG.columnDataTypeMap[firstDataType];\n        return validOperators.indexOf(currentOperator) === -1;\n      }\n\n      return false;\n    },\n\n    getFirstDataType(conditions) {\n      if (this.$util.isEmptyObject(conditions)) return null;\n\n      let firstDataType = null;\n\n      const columns = conditions.column;\n      const columnLth = columns.length;\n\n      for (let i = 0; i < columnLth; i++) {\n        if (columns[i]) {\n          const hitColumn = this.ruleSet.input_columns.find(\n            (item) => item.name === columns[i],\n          );\n\n          if (hitColumn && hitColumn.type !== 'STRING') {\n            firstDataType = hitColumn.type;\n            break;\n          }\n        }\n      }\n\n      return firstDataType;\n    },\n\n    firstDataTypeEqualCheck(firstDataType, currentDataType) {\n      const numberTypes = ['INT', 'FLOAT'];\n\n      if (numberTypes.indexOf(firstDataType) !== -1) {\n        return numberTypes.indexOf(currentDataType) === -1;\n      }\n\n      return currentDataType !== firstDataType;\n    },\n\n    execNewRuleItem(priority, ruleItem) {\n      if (!this.isSearching) {\n        this.rulesForm.ruleList.splice(priority, 0, ruleItem);\n        this.updateRulePriorityWithType();\n      } else {\n        this.cacheRules.splice(priority, 0, ruleItem);\n        this.updateRulePriorityWithType('backup');\n\n        let newSearchIndex;\n\n        this.rulesForm.ruleList.forEach((item, index) => {\n          if (item.priority < priority) return;\n\n          item.priority === priority\n            ? (newSearchIndex = item.searchIndex)\n            : (this.rulesForm.ruleList[index].searchIndex += 1);\n        });\n\n        ruleItem.searchIndex = newSearchIndex + 1;\n        this.rulesForm.ruleList.splice(newSearchIndex, 0, ruleItem);\n      }\n\n      this.goToCurrentRow(\n        ruleItem[this.isSearching ? 'searchIndex' : 'priority'],\n      );\n    },\n\n    checkConditionError({ column, operator }) {\n      if (!column.length || !operator) return '';\n\n      const hitColumn = this.ruleSet.input_columns.find(\n        ({ name }) => name === column[0],\n      );\n\n      if (hitColumn) {\n        const validOperators = CONFIG.columnDataTypeMap[hitColumn.type];\n        return validOperators.indexOf(operator) !== -1\n          ? ''\n          : this.$t('rulesets.ph.no_match_rule_field_type');\n      }\n    },\n\n    checkConditionFullNull(condition) {\n      return !!condition.find(\n        ({ column, operand, operator }) =>\n          operator === ''\n          && column.length === 0\n          && !['is null', 'is not null'].includes(operator)\n          && operand === '',\n      );\n    },\n\n    checkConditionNull(condition) {\n      return !!condition.find(\n        ({ column, operand, operator }) =>\n          operator === ''\n          || column.length === 0\n          || (!['is null', 'is not null'].includes(operator) && operand === ''),\n      );\n    },\n\n    /**\n     * 对nullArr进行非空检测；\n     */\n    checkData() {\n      const nullList = [];\n\n      // todo: 这里检测为空的逻辑有点问题\n      this.rulesForm.ruleList.forEach((rule) => {\n        const condition = rule.condition[0];\n        if (\n          rule.value === ''\n          || condition.operator === ''\n          || (!['is null', 'is not null'].includes(condition.operator)\n            && condition.operand === '')\n          || condition.column.length === 0\n        ) {\n          nullList.push(rule.priority);\n        }\n      });\n\n      if (nullList.length) {\n        this.sendNullMsg(nullList);\n        return true;\n      }\n\n      const repeatList = [];\n\n      this.duplicatedArr.slice(0, 3).forEach((item) => {\n        const list = this.compareDict[item];\n\n        if (list.length > 1) {\n          list.forEach((item) => repeatList.push(item.priority));\n        }\n      });\n\n      if (repeatList.length) {\n        this.sendRepeatMsg(repeatList);\n        return true;\n      }\n\n      return false;\n    },\n\n    sortRuleCondition(condition) {\n      const sortedCondition = [...condition].sort((a, b) => {\n        if (a.operand > b.operand) return 1;\n        if (a.operand < b.operand) return -1;\n\n        if (a.operator > b.operator) return 1;\n        if (a.operator < b.operator) return -1;\n\n        const columnA = [...a.column].sort().join();\n        const columnB = [...b.column].sort().join();\n\n        return columnA > columnB ? 1 : -1;\n      });\n\n      return JSON.stringify(sortedCondition);\n    },\n\n    goToCurrentRow(priority) {\n      this.currentPage = Math.ceil(priority / this.pageSize);\n      setTimeout(() => {\n        this.$refs.rulesRef.setCurrentRow(\n          this.rulesForm.ruleList[priority - 1],\n        );\n      }, 0);\n    },\n\n    cancelCurrentRow(e) {\n      const { rulesRef } = this.$refs;\n\n      if (!e && rulesRef) {\n        rulesRef.setCurrentRow();\n        return;\n      }\n\n      const headerDom = this.$el.querySelector('.el-table__header-wrapper');\n\n      if (this.$el.contains(e.target) && !headerDom?.contains(e.target)) {\n        return;\n      }\n\n      if (rulesRef) {\n        rulesRef.setCurrentRow();\n      }\n    },\n\n    showMessage(key, dictValue) {\n      this.messageDict[key]?.close();\n      this.messageDict[key] = this.$message.error({\n        offset: 65,\n        duration: 0,\n        showClose: true,\n        message: `优先级为 (${dictValue\n          .map((item) => item.priority)\n          .join(', ')}) 的规则重复，请重新编辑！`,\n      });\n    },\n\n    closeMessage(key) {\n      const message = this.messageDict[key];\n\n      if (message) {\n        message.close();\n        delete this.messageDict[key];\n      }\n    },\n\n    sendRepeatMsg(repeatArr) {\n      if (!repeatArr.length) {\n        return;\n      }\n\n      const text = repeatArr.join(', ');\n\n      this.$tip.MsgError(`优先级为 (${text}) 的规则重复，请重新编辑！`);\n\n      if (this.isSearching) this.$emit('resetSearch');\n\n      this.$nextTick(() => {\n        this.goToCurrentRow(repeatArr[0]);\n      });\n    },\n\n    sendNullMsg(nullArr) {\n      if (!nullArr.length) {\n        return;\n      }\n\n      const text = nullArr.slice(0, 3).join('、');\n      let message = `第${text}等${nullArr.length}条规则未填写完毕，请检查！`;\n\n      if (this.isSearching) {\n        message = `第${text}等${nullArr.length}条规则未填写完毕，请清除搜索后检查！`;\n      }\n\n      this.$tip.MsgError(message);\n      this.$nextTick(() => {\n        this.goToCurrentRow(nullArr[0]);\n      });\n    },\n\n    updateRulePriorityWithType(type = undefined) {\n      // 这里直接用 forEach 更新的原因是为了保证在搜索情况下\n      // 新增/复制表达式时能直接同步更新其优先级\n      if (type === 'backup') {\n        this.cacheRules.forEach((item, index) => {\n          item.priority = index + 1;\n        });\n        return;\n      }\n\n      this.rulesForm.ruleList.forEach((item, index) => {\n        item.priority = index + 1;\n      });\n      this.cacheRules = this.$util.simpleDeepCopy(this.rulesForm.ruleList); // 不明确\n    },\n\n    handleSortableOnEnd({ oldIndex, newIndex }) {\n      if (oldIndex === newIndex) return;\n\n      const { ruleList } = this.rulesForm;\n      const pageIndex = (this.currentPage - 1) * this.pageSize;\n      const targetRow = ruleList.splice(oldIndex + pageIndex, 1)[0];\n\n      ruleList.splice(newIndex + pageIndex, 0, targetRow);\n\n      this.$nextTick(() => {\n        this.updateRulePriorityWithType();\n        this.cancelCurrentRow();\n        this.checkRuleModified('scan');\n      });\n    },\n\n    handleOpenRulePriority(visible, priority) {\n      if (!visible) {\n        this.$refs.priorityFormRef.resetFields();\n        return;\n      }\n\n      this.priorityForm = {\n        prev: priority,\n        next: priority,\n      };\n    },\n\n    /** 手动更改优先级 */\n    handleSortableOnPopover(row, index) {\n      const { prev, next } = this.priorityForm;\n      // const { ruleList } = this.rulesForm;\n\n      if (prev === next) return;\n\n      const tempTableData = this.rulesForm.ruleList;\n\n      if (next > prev) {\n        tempTableData.splice(next, 0, row);\n        tempTableData.splice(prev - 1, 1);\n      } else {\n        tempTableData.splice(prev - 1, 1);\n        tempTableData.splice(next - 1, 0, row);\n      }\n\n      // 深拷贝导致新增的规则在进行nullArr验证时数据对不上（因为nullArr数组存的对象是和rulelist数组进行共享的）\n      // this.rulesForm.ruleList = this.$util.simpleDeepCopy(tempTableData);\n      this.$nextTick(() => {\n        this.updateRulePriorityWithType();\n        this.goToCurrentRow(\n          next > this.rulesForm.ruleList.length\n            ? this.rulesForm.ruleList.length\n            : next,\n        );\n        this.checkRuleModified('scan');\n      });\n\n      this.$refs[`priorityRef-${index}`].doClose();\n    },\n\n    handleCheckRule(row, value, type = undefined) {\n      if (!row.value && this.checkConditionFullNull(row.condition)) {\n        this.checkRuleModified(type);\n        return;\n      }\n\n      if (\n        this.$util.isEmptyObject(this.originalDict)\n        || this.originalDict[row.priority]\n      ) {\n        this.recoverDict = {\n          ...this.recoverDict,\n          [row.priority]:\n            JSON.stringify(row)\n            === JSON.stringify(this.originalDict[row.priority]),\n        };\n      }\n\n      const newVal = Array.isArray(value) ? value.sort().join(',') : value;\n\n      Array.isArray(this.valueCached) && this.valueCached.sort().join(',');\n\n      this.deleteFromCompareDict(this.conditionKeyCached, this.ruleCached);\n\n      if (newVal && !this.checkConditionNull(row.condition)) {\n        const newKey = this.sortRuleCondition(row.condition);\n\n        setTimeout(() => {\n          this.addToCompareDict(newKey, row);\n        }, 0);\n      }\n\n      this.resetCached();\n    },\n\n    handleFocusRule(rule, value) {\n      this.ruleCached = rule;\n      this.conditionKeyCached = this.sortRuleCondition(rule.condition);\n      this.valueCached = value;\n    },\n\n    handleRemoveRuleInputColumn(val, rule, index, value) {\n      this.$refs.rulesRef.setCurrentRow(rule);\n\n      if (this.inputColumnVisible) return;\n\n      const oldCondition = this.$util.simpleDeepCopy(rule.condition);\n      oldCondition[index].column.push(val);\n\n      const oldRule = {\n        ...rule,\n        condition: oldCondition,\n      };\n      this.handleFocusRule(oldRule, [...value].push(val));\n      this.handleCheckRule(rule, value);\n    },\n\n    handleVisibleChangeRule(bool, rule, value) {\n      this.inputColumnVisible = bool;\n      this.$refs.rulesRef.setCurrentRow(rule);\n\n      bool\n        ? this.handleFocusRule(rule, value)\n        : this.handleCheckRule(rule, value);\n    },\n\n    handleClickOperator(operator) {\n      if (\n        this.keepFirstSelected\n        && ['match', 'not match'].indexOf(operator) === -1\n      ) {\n        this.$tip.Msg('当前取值模式下，仅允许添加正则相关表达式');\n      }\n    },\n\n    handleBlurRuleResult(row) {\n      this.valueCached = '';\n      this.handleCheckRule(row, row.value, 'skip');\n    },\n\n    handleChangeOperator(id, index, operator) {\n      if (['is null', 'is not null'].includes(operator)) return;\n\n      this.$nextTick(() => {\n        this.$refs.rulesForm.validateField(\n          `ruleList[${id}].condition[${index}].operand`,\n        );\n      });\n    },\n\n    handleChangeOperand(id, index) {\n      this.rulesForm.ruleList[id].condition[\n        index\n      ].operand = this.rulesForm.ruleList[id].condition[index].operand\n        .replace(/，/g, ',')\n        .split(',')\n        .map((operandItem) => operandItem.trim())\n        .join(',');\n    },\n\n    handleChangeRuleResult(rule) {\n      rule.value = rule.value.replace(/，/g, ',').trim();\n    },\n\n    handleAddRuleCondition(rule) {\n      this.deleteFromCompareDict(this.sortRuleCondition(rule.condition), rule);\n\n      rule.condition.push(this.$util.simpleDeepCopy(this.defaultRuleCondition));\n\n      this.addToNullArr(rule);\n\n      if (\n        this.$util.isEmptyObject(this.originalDict)\n        || this.originalDict[rule.priority]\n      ) {\n        this.recoverDict = {\n          ...this.recoverDict,\n          [rule.priority]:\n            JSON.stringify(rule)\n            === JSON.stringify(this.originalDict[rule.priority]),\n        };\n      }\n    },\n\n    handleDeleteRuleCondition(rule, index) {\n      this.deleteFromCompareDict(this.sortRuleCondition(rule.condition), rule);\n      rule.condition.splice(index, 1);\n\n      if (\n        this.$util.isEmptyObject(this.originalDict)\n        || this.originalDict[rule.priority]\n      ) {\n        this.recoverDict = {\n          ...this.recoverDict,\n          [rule.priority]:\n            JSON.stringify(rule)\n            === JSON.stringify(this.originalDict[rule.priority]),\n        };\n      }\n\n      setTimeout(() => {\n        if (this.checkConditionNull(rule.condition)) return;\n        this.addToCompareDict(this.sortRuleCondition(rule.condition), rule);\n      }, 0);\n    },\n\n    /** 新增一条规则 */\n    handleAddRule() {\n      const newRuleItem = this.initRuleItem(this.defaultRuleItem);\n      this.clickedRow = newRuleItem.priority;\n\n      if (this.isSearching) {\n        this.cacheRules.push(newRuleItem);\n\n        newRuleItem.searchIndex = this.rulesForm.ruleList.length + 1;\n        this.rulesForm.ruleList.push(newRuleItem);\n      } else {\n        this.rulesForm.ruleList.push(newRuleItem);\n        this.cacheRules = this.$util.simpleDeepCopy(this.rulesForm.ruleList); // 不明确\n      }\n\n      this.goToCurrentRow(\n        newRuleItem[this.isSearching ? 'searchIndex' : 'priority'],\n      );\n      this.addToNullArr(newRuleItem); // 同一个对象被两个数组共享（万恶之源，因为深拷贝会导致两边的数据不同步，而且还需要考虑元素操作在两边是同步的）\n      this.checkRuleModified();\n    },\n\n    /** 在下方插入新规则 */\n    handleInsertRule(priority) {\n      const newRuleItem = this.initRuleItem(this.defaultRuleItem);\n      this.clickedRow = priority + 1;\n      this.execNewRuleItem(priority, newRuleItem);\n      this.addToNullArr(newRuleItem);\n      this.checkRuleModified('scan');\n    },\n\n    handleCopyRule(priority) {\n      const template = this.isSearching\n        ? this.cacheRules\n        : this.rulesForm.ruleList;\n      const newRuleItem = this.initRuleItem(template[priority - 1]);\n\n      this.clickedRow = priority + 1;\n      this.execNewRuleItem(priority, newRuleItem);\n      this.checkRuleModified('scan');\n\n      setTimeout(() => {\n        this.addToCompareDict(\n          this.sortRuleCondition(newRuleItem.condition),\n          newRuleItem,\n        );\n      }, 0);\n    },\n\n    handleDeleteRule(row) {\n      const { priority } = row;\n      const key = this.sortRuleCondition(row.condition);\n\n      this.deleteFromCompareDict(key, row);\n      this.deleteFromNullArr(row);\n\n      if (!this.isSearching) {\n        this.rulesForm.ruleList.splice(priority - 1, 1);\n        this.updateRulePriorityWithType();\n        this.checkRuleModified('scan');\n        return;\n      }\n\n      this.cacheRules.splice(priority - 1, 1);\n      this.updateRulePriorityWithType('backup');\n\n      let newSearchIndex;\n\n      this.rulesForm.ruleList.forEach((item) => {\n        if (item.priority === priority) {\n          newSearchIndex = item.searchIndex;\n        }\n      });\n      this.rulesForm.ruleList.splice(newSearchIndex - 1, 1);\n      this.rulesForm.ruleList.forEach((item, index) => {\n        if (item.priority > priority) {\n          this.rulesForm.ruleList[index].searchIndex -= 1;\n        }\n      });\n      this.checkRuleModified('scan');\n    },\n\n    handleSave() {\n      const { $tip } = this;\n\n      this.$refs.rulesForm.validate((valid) => {\n        if (!valid) {\n          $tip.MsgError(this.$t('rulesets.note.rule_save_limit'));\n          return;\n        }\n\n        /** 表单检验通过还要进行检测的目的：因为表单检验的只是当前页的数据，而改动可能涉及到其它页的数据 */\n        if (this.isSearching) {\n          $tip.MsgError(this.$t('rulesets.note.save_search_limit'));\n        } else if (this.rulesForm.ruleList.length === 0) {\n          $tip.MsgError(this.$t('rulesets.note.save_empty_limit'));\n        } else if (this.checkData()) {\n          console.log('检查不通过');\n        } else if (!this.isRulesModified) {\n          this.$tip.MsgSuccess(this.$t('common.note.save_ok'));\n        } else this.handleCommitRules('save');\n      });\n    },\n\n    handleValidateRule(isPublishPartition = false) {\n      this.$refs.rulesForm.validate((valid) => {\n        this.toggleLeavePublish(false);\n\n        if (!valid) {\n          return this.$tip.MsgError(this.$t('rulesets.note.rule_save_limit'));\n        }\n\n        if (this.isSearching) {\n          this.$tip.MsgWarning(this.$t('rulesets.note.publish_search_limit'));\n        } else if (this.rulesForm.ruleList.length === 0) {\n          this.$tip.MsgWarning(this.$t('rulesets.note.save_empty_limit'));\n        } else if (this.checkData()) {\n          console.log('检查不通过');\n        } else if (\n          !isPublishPartition\n          && !this.isRulesDraft\n          && !this.isRulesModified\n        ) {\n          this.$tip.MsgSuccess(this.$t('common.note.publish_ok'));\n        } else {\n          this.isPublishPartition = isPublishPartition;\n          this.showDialog = true;\n        }\n      });\n    },\n\n    handleCommitRules(action = 'save', versionParams = undefined) {\n      const data = this.$util.simpleDeepCopy(\n        this.isSearching ? this.cacheRules : this.rulesForm.ruleList,\n      );\n      const params = {};\n\n      params.rules = data.map((rule) => {\n        const cond = rule.condition.map(({ column, operator, operand }) => ({\n          operand,\n          operator,\n          column: column.join(','),\n        }));\n\n        return {\n          id: rule.id !== 0 ? rule.id : null,\n          value: rule.value,\n          remark: rule.remark,\n          condition: cond,\n        };\n      });\n      params.action = action;\n      params.version_id = this.version.id ?? null;\n\n      if (action === 'publish') {\n        params.publish_desc = versionParams.publish_desc;\n      } else if (action === 'partition') {\n        params.action = 'publish';\n        params.version = versionParams.version;\n        delete params.version_id;\n      }\n\n      this.fetchUpdateRules(params);\n    },\n\n    async fetchUpdateRules(params) {\n      try {\n        this.$emit('stop-listen');\n\n        await this.updateEditConflict({\n          status: 'free',\n          vid: this.version?.id ?? null,\n          rid: this.$route.params.rid,\n        });\n\n        params.action === 'publish'\n          ? (this.isPublishLoading = true)\n          : (this.isSaveLoading = true);\n\n        const { rid } = this.$route.params;\n        const res = await this.saveOrPublishRules({\n          rid,\n          params,\n          vid: this.version?.id ?? null,\n          type: params.action,\n        });\n\n        if (res?.ok) {\n          this.$refs.rulesForm.clearValidate();\n          params.action === 'publish' && (this.showDialog = false);\n        }\n      } catch (error) {\n        0;\n      } finally {\n        this.isSaveLoading = false;\n        this.isPublishLoading = false;\n      }\n    },\n  },\n}",
+      "start": {
+        "offset": 19763,
+        "line": 532,
+        "column": 15
+      },
+      "end": {
+        "offset": 51083,
+        "line": 1693,
+        "column": 1
+      }
+    }
+  }
+}

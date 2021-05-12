@@ -1,0 +1,333 @@
+{
+  "nodes": [
+    {
+      "name": "compareReactive"
+    },
+    {
+      "name": "initCurrentRow"
+    },
+    {
+      "name": "initCurrentRuleList"
+    },
+    {
+      "name": "initRuleItem"
+    },
+    {
+      "name": "resetRealTime"
+    },
+    {
+      "name": "resetCached"
+    },
+    {
+      "name": "handleRowClick"
+    },
+    {
+      "name": "checkRuleModified"
+    },
+    {
+      "name": "operandValidator"
+    },
+    {
+      "name": "isNotBlank"
+    },
+    {
+      "name": "addToNullArr"
+    },
+    {
+      "name": "addToCompareDict"
+    },
+    {
+      "name": "deleteFromNullArr"
+    },
+    {
+      "name": "deleteFromCompareDict"
+    },
+    {
+      "name": "disabledInputColumnCondition"
+    },
+    {
+      "name": "disabledOperatorCondition"
+    },
+    {
+      "name": "getFirstDataType"
+    },
+    {
+      "name": "firstDataTypeEqualCheck"
+    },
+    {
+      "name": "execNewRuleItem"
+    },
+    {
+      "name": "checkConditionError"
+    },
+    {
+      "name": "checkConditionFullNull"
+    },
+    {
+      "name": "checkConditionNull"
+    },
+    {
+      "name": "checkData"
+    },
+    {
+      "name": "sortRuleCondition"
+    },
+    {
+      "name": "goToCurrentRow"
+    },
+    {
+      "name": "cancelCurrentRow"
+    },
+    {
+      "name": "showMessage"
+    },
+    {
+      "name": "closeMessage"
+    },
+    {
+      "name": "sendRepeatMsg"
+    },
+    {
+      "name": "sendNullMsg"
+    },
+    {
+      "name": "updateRulePriorityWithType"
+    },
+    {
+      "name": "handleSortableOnEnd"
+    },
+    {
+      "name": "handleOpenRulePriority"
+    },
+    {
+      "name": "handleSortableOnPopover"
+    },
+    {
+      "name": "handleCheckRule"
+    },
+    {
+      "name": "handleFocusRule"
+    },
+    {
+      "name": "handleRemoveRuleInputColumn"
+    },
+    {
+      "name": "handleVisibleChangeRule"
+    },
+    {
+      "name": "handleClickOperator"
+    },
+    {
+      "name": "handleBlurRuleResult"
+    },
+    {
+      "name": "handleChangeOperator"
+    },
+    {
+      "name": "handleChangeOperand"
+    },
+    {
+      "name": "handleChangeRuleResult"
+    },
+    {
+      "name": "handleAddRuleCondition"
+    },
+    {
+      "name": "handleDeleteRuleCondition"
+    },
+    {
+      "name": "handleAddRule"
+    },
+    {
+      "name": "handleInsertRule"
+    },
+    {
+      "name": "handleCopyRule"
+    },
+    {
+      "name": "handleDeleteRule"
+    },
+    {
+      "name": "handleSave"
+    },
+    {
+      "name": "handleValidateRule"
+    },
+    {
+      "name": "handleCommitRules"
+    },
+    {
+      "name": "fetchUpdateRules"
+    }
+  ],
+  "edges": [
+    {
+      "source": "compareReactive",
+      "target": "sortRuleCondition"
+    },
+    {
+      "source": "handleFocusRule",
+      "target": "sortRuleCondition"
+    },
+    {
+      "source": "handleAddRuleCondition",
+      "target": "sortRuleCondition"
+    },
+    {
+      "source": "handleDeleteRuleCondition",
+      "target": "sortRuleCondition"
+    },
+    {
+      "source": "handleDeleteRule",
+      "target": "sortRuleCondition"
+    },
+    {
+      "source": "resetRealTime",
+      "target": "resetCached"
+    },
+    {
+      "source": "addToCompareDict",
+      "target": "showMessage"
+    },
+    {
+      "source": "deleteFromCompareDict",
+      "target": "closeMessage"
+    },
+    {
+      "source": "disabledInputColumnCondition",
+      "target": "getFirstDataType"
+    },
+    {
+      "source": "disabledOperatorCondition",
+      "target": "getFirstDataType"
+    },
+    {
+      "source": "execNewRuleItem",
+      "target": "updateRulePriorityWithType"
+    },
+    {
+      "source": "handleSortableOnEnd",
+      "target": "updateRulePriorityWithType"
+    },
+    {
+      "source": "handleSortableOnPopover",
+      "target": "updateRulePriorityWithType"
+    },
+    {
+      "source": "handleDeleteRule",
+      "target": "updateRulePriorityWithType"
+    },
+    {
+      "source": "execNewRuleItem",
+      "target": "goToCurrentRow"
+    },
+    {
+      "source": "sendRepeatMsg",
+      "target": "goToCurrentRow"
+    },
+    {
+      "source": "sendNullMsg",
+      "target": "goToCurrentRow"
+    },
+    {
+      "source": "checkData",
+      "target": "sendNullMsg"
+    },
+    {
+      "source": "handleSortableOnEnd",
+      "target": "checkRuleModified"
+    },
+    {
+      "source": "handleSortableOnPopover",
+      "target": "checkRuleModified"
+    },
+    {
+      "source": "handleCopyRule",
+      "target": "checkRuleModified"
+    },
+    {
+      "source": "handleDeleteRule",
+      "target": "checkRuleModified"
+    },
+    {
+      "source": "handleCheckRule",
+      "target": "checkConditionFullNull"
+    },
+    {
+      "source": "handleCheckRule",
+      "target": "deleteFromCompareDict"
+    },
+    {
+      "source": "handleAddRuleCondition",
+      "target": "deleteFromCompareDict"
+    },
+    {
+      "source": "handleDeleteRule",
+      "target": "deleteFromCompareDict"
+    },
+    {
+      "source": "handleRemoveRuleInputColumn",
+      "target": "handleFocusRule"
+    },
+    {
+      "source": "handleVisibleChangeRule",
+      "target": "handleFocusRule"
+    },
+    {
+      "source": "handleBlurRuleResult",
+      "target": "handleCheckRule"
+    },
+    {
+      "source": "handleAddRuleCondition",
+      "target": "addToNullArr"
+    },
+    {
+      "source": "handleAddRule",
+      "target": "addToNullArr"
+    },
+    {
+      "source": "handleInsertRule",
+      "target": "addToNullArr"
+    },
+    {
+      "source": "handleDeleteRuleCondition",
+      "target": "checkConditionNull"
+    },
+    {
+      "source": "handleDeleteRuleCondition",
+      "target": "addToCompareDict"
+    },
+    {
+      "source": "handleCopyRule",
+      "target": "addToCompareDict"
+    },
+    {
+      "source": "handleAddRule",
+      "target": "initRuleItem"
+    },
+    {
+      "source": "handleInsertRule",
+      "target": "initRuleItem"
+    },
+    {
+      "source": "handleCopyRule",
+      "target": "initRuleItem"
+    },
+    {
+      "source": "handleDeleteRule",
+      "target": "deleteFromNullArr"
+    },
+    {
+      "source": "handleSave",
+      "target": "checkData"
+    },
+    {
+      "source": "handleValidateRule",
+      "target": "checkData"
+    },
+    {
+      "source": "handleCommitRules",
+      "target": "fetchUpdateRules"
+    }
+  ]
+}

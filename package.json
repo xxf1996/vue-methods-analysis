@@ -1,0 +1,19 @@
+{
+  "name": "vue-methods-analysis",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@vuedx/analyze": "^0.6.3",
+    "acorn": "^8.2.4",
+    "acorn-walk": "^8.1.0"
+  },
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
