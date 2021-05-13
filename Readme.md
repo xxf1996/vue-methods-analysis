@@ -13,3 +13,9 @@
 - 使用acorn-walk来遍历AST结构，提取methods声明的方法以及methods方法调用栈信息（静态）；
 - 可使用echarts来可视化所有可能的调用关系图；
 - 也可以输出一份bottom-up（自底向上） call tree信息，简洁明了；
+
+## to do
+
+- [ ] vscode插件化；
+- [ ] call tree折叠查看；
+- [ ] 点击函数名可以跳到相应的源码位置（@vuedx/analyze分析结果有）；
